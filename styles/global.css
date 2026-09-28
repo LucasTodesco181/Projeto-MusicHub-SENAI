@@ -1,6 +1,18 @@
-BODY
+*
 {
     margin: 0;
     padding: 0;
     font-family: 'Murecho', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #26333D;
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --cor-destaque: #030469;
+    --fundos: #E9F0EF;
+    --textos-paginas: #535353;
+    --cor-bordas: #cccccc;
+    --preto: #000000;
 }
