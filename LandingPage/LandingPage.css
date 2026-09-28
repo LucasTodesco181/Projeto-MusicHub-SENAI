@@ -1,5 +1,4 @@
-header
-{
+header {
     display: flex;
     justify-content: space-between;
     background-color: #000;
@@ -8,46 +7,40 @@ header
     align-items: center;
 }
 
-.btns
-{
+.btns {
     display: flex;
     gap: 20px;
 }
 
-.btns a
-{
+.btns a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     text-align: center;
 }
 
-.btns :nth-child(1)
-{
+.btns a:nth-child(1) {
     background-color: #5E92DB;
     border: none;
     border-radius: 10px;
     padding: 10px 30px;
 }
 
-.btns :nth-child(2)
-{
+.btns a:nth-child(2) {
     background-color: transparent;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px 30px;
 }
 
-.btns :nth-child(3)
-{
+.btns a:nth-child(3) {
     background-color: #1663CE;
     border: none;
     border-radius: 10px;
     padding: 10px 30px;
 }
 
-.inicio
-{
+.inicio {
     background-color: #000;
     background-image: url(../imgs/banner-principal.png);
     background-repeat: no-repeat;
@@ -57,21 +50,18 @@ header
     padding: 20px 35px;
 }
 
-.inicio p
-{
+.inicio p {
     font-size: 2.5em;
     width: 40%;
     margin-bottom: 5%;
 }
 
-.nav
-{
+.nav {
     display: flex;
     gap: 20px;
 }
 
-.nav a
-{
+.nav a {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
@@ -82,15 +72,13 @@ header
     text-transform: uppercase;
 }
 
-.nav :nth-child(1)
-{
+.nav a:nth-child(1) {
     background-color: transparent;
     border: 1px solid white;
 }
 
-.meio
-{
-    background-image: url(../imgs/Desktop\ -\ 6.jpg);
+.meio {
+    background-image: url(../imgs/imagem-de-fundo-1.jpg);
     background-repeat: no-repeat;
     height: 80vh;
     color: white;
@@ -99,7 +87,72 @@ header
     padding: 20% 10%;
 }
 
-.meio h2, .meio p
-{
+.meio h2,
+.meio p {
     font-size: 2em;
+}
+
+.container-vip {
+    background-image: url(../imgs/imagem-de-fundo-2.svg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.conteudo-vip {
+    width: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.conteudo-vip .texto {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.conteudo-vip .subtitulo {
+    font-size: 1em;
+}
+
+.beneficios-vip {
+    list-style: none;
+}
+
+.beneficios-vip li {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios-vip li::before {
+    content: "★";
+    margin-right: 6px;
+    font-size: 1em;
+}
+
+.container-botao {
+    margin-top: 10px;
+}
+
+.btn-planos {
+    display: flex;
+    padding: 8px 32px;
+    background-color: #5E92DB;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.btn-planos:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
 }
