@@ -1,0 +1,44 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    height: 65px;
+    
+}
+
+.busca {
+    border-radius: 10px;
+
+    background-color: #262626;
+    height: 40px;
+    width: 260px;
+}
+
+ .busca input {
+    background-color: #262626;
+    color: #ffffff;
+    
+    border: none;
+}
+
+.cabecalho input::placeholder {
+    color: #5e92db;
+}
+
+.navegacao {
+    
+}
+
+/* main */
+
+.alterar_senha  {
+    background-color: #0E0E0E;
+}
+
+.alterar_senha h1 {
+    color: #ffffff;
+}
+
+.login {
+    background-color: #161616;
+}
