@@ -1,0 +1,235 @@
+/* MAIN */
+
+.conteudo {
+
+    background-size: cover;
+
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ÁREA LOGIN */
+
+body {
+ background-image: url(../imgs/Pagina\ criar\ conta.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+.cadastro {
+  background: rgba(30, 65, 120, 0.45); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 24px;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO DO LOGIN */
+
+.cadastro-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cadastro-cabecalho img {
+    margin-bottom: 15px;
+}
+
+.cadastro-cabecalho h1 {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.cadastro-cabecalho p {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CAMPOS */
+
+.campo {
+   color: rgba(255, 255, 255, 0.85); /* Texto branco para dar leitura */
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input, 
+.botao-entrar,
+.botao-google,
+.botao-apple
+{
+    width: 100%;
+    height: 50px;
+gap: 20%;
+    border-radius: 10px;
+}
+
+.campo label {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+.campo input {
+   width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  outline: none;
+   border: 0.5px solid #1663CE
+}
+
+.campo input::placeholder {
+   color: rgba(255, 255, 255, 0.4);
+}
+
+/* CAMPO SENHA */
+
+.campo-senha {
+    position: relative;
+}
+
+.campo-ConfirmeSenha {
+    position: relative;
+}
+
+.botao-olho {
+    position: absolute;
+
+    right: 20px;
+    top: 35%;
+    transform: translateY(-50%);
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* BOTÃO ENTRAR */
+
+.botao-avancar {
+   width: 100%;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+ 
+}
+
+.botao-avancar:hover {
+   background-color: #1d4ed8;
+}
+/* BOTAO GOOGLE */
+
+  .botao-google {
+    border: none;
+
+    background-color: #ffffff;
+
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    transition: transform 0.2s;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-apple {
+    border: none;
+
+    background-color: #ffffff;
+
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    transition: transform 0.2s;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-apple:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-google img {
+    width: 30px;
+    height: 30px;
+}
+
+.botao-apple img {
+    width: 30px;
+    height: 30px;
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-apple:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-apple img {
+    width: 30px;
+    height: 30px;
+}
+
+.botao-google img {
+    width: 30px;
+    height: 30px;
+}
