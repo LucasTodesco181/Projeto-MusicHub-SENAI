@@ -4,3 +4,14 @@ BODY
     padding: 0;
     font-family: 'Murecho', sans-serif;
 }
+
+.btn-planos {
+    padding: 5px 15px;
+    background-color: #5E92DB;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}

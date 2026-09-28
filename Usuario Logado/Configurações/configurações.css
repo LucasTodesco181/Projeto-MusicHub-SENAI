@@ -1,0 +1,48 @@
+
+header
+{
+   background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navegacao
+{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 20px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.area-busca
+{
+    display: flex;
+    gap: 10px;
+}
+
+.area-busca input
+{
+    background: none;
+    border: none;
+    color: white;
+    
+}
+
+.area-busca input::placeholder
+{
+    color: #5E92DB;
+}
+
+.area-busca input:focus {
+  outline: none;
+}
+
