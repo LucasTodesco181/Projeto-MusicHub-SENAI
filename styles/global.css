@@ -1,8 +1,10 @@
-BODY
-{
-    margin: 0;
-    padding: 0;
-    font-family: 'Murecho', sans-serif;
+@import url('https://googleapis.com');
+
+/* 2. Seus estilos */
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Murecho', sans-serif; 
 }
 
 .btn-planos {
@@ -14,4 +16,52 @@ BODY
     text-decoration: none;
     border-radius: 5px;
     letter-spacing: 1px;
+}
+
+/*Header*/
+header
+{
+   background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navegacao
+{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 20px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.area-busca
+{
+    display: flex;
+    gap: 10px;
+}
+
+.area-busca input
+{
+    background: none;
+    border: none;
+    color: white;
+    
+}
+
+.area-busca input::placeholder
+{
+    color: #5E92DB;
+}
+
+.area-busca input:focus {
+  outline: none;
 }
