@@ -1,48 +1,36 @@
-
-header
-{
-   background-color: black;
-    display:flex;
+.configuracoes {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 120px;
+    background-image: url(../../imgs/configurações.svg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.navegacao
-{
+.Reproducao-topicos {
     display: flex;
     align-items: center;
-    font-size: 1em;
-    gap: 20px;
-}
-
-.info
-{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.area-busca
-{
-    display: flex;
     gap: 10px;
 }
 
-.area-busca input
+.btn-config 
 {
-    background: none;
-    border: none;
+    text-decoration: none;
     color: white;
-    
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 24px;
 }
 
-.area-busca input::placeholder
+.estado
 {
-    color: #5E92DB;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 24px;
 }
-
-.area-busca input:focus {
-  outline: none;
-}
-
