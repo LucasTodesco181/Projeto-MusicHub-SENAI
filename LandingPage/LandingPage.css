@@ -1,148 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     background-color: #000;
-    height: 50px;
-    padding: 10px 30px;
+    height: 60px;
+    padding: 10px 40px;
     align-items: center;
 }
 
 .btns {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    align-items: center;
 }
 
 .btns a {
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: bold;
     text-align: center;
+    border-radius: 20px;
+    padding: 8px 24px;
 }
 
-.btns a:nth-child(1) {
+.btn-planos-head {
     background-color: #5E92DB;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 30px;
 }
 
-.btns a:nth-child(2) {
+.btn-outline {
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px 30px;
 }
 
-.btns a:nth-child(3) {
+.btn-primary {
     background-color: #1663CE;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 30px;
 }
 
 .inicio {
     background-color: #000;
     background-image: url(../imgs/banner-principal.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right center;
+    background-size: contain;
     color: white;
-    height: 70vh;
-    padding: 20px 35px;
+    min-height: 80vh;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
 }
 
-.inicio p {
-    font-size: 2.5em;
-    width: 40%;
-    margin-bottom: 5%;
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.2em;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .nav {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .nav a {
-    font-size: 1.5em;
+    font-size: 0.9em;
+    font-weight: bold;
     text-decoration: none;
     color: white;
-    background-color: #1663CE;
-    border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 10px 30px;
     text-transform: uppercase;
-}
-
-.nav a:nth-child(1) {
-    background-color: transparent;
-    border: 1px solid white;
 }
 
 .meio {
     background-image: url(../imgs/imagem-de-fundo-1.jpg);
     background-repeat: no-repeat;
-    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
     color: white;
     display: flex;
-    flex-direction: column;
-    padding: 20% 10%;
+    align-items: center;
+    padding: 0 10%;
 }
 
-.meio h2,
+.meio-content {
+    max-width: 800px;
+}
+
 .meio p {
-    font-size: 2em;
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 
 .container-vip {
     background-image: url(../imgs/imagem-de-fundo-2.svg);
     background-repeat: no-repeat;
-    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 40px 8%;
 }
 
 .conteudo-vip {
-    width: 55%;
-    text-align: center;
+    width: 60%;
+    text-align: right;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     color: white;
 }
 
+.conteudo-vip h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .conteudo-vip .texto {
-    font-size: 1.2em;
-    margin-bottom: 0;
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin-bottom: 15px;
 }
 
 .conteudo-vip .subtitulo {
-    font-size: 1em;
+    font-size: 1.1em;
+    margin: 10px 0;
 }
 
 .beneficios-vip {
     list-style: none;
+    margin-bottom: 15px;
 }
 
 .beneficios-vip li {
     font-size: 1em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 6px;
 }
 
 .beneficios-vip li::before {
     content: "★";
-    margin-right: 6px;
-    font-size: 1em;
+    margin-right: 8px;
+    color: #fff;
 }
 
 .container-botao {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .btn-planos {
-    display: flex;
-    padding: 8px 32px;
+    display: inline-block;
+    padding: 10px 35px;
     background-color: #5E92DB;
     color: white;
     font-weight: bold;
@@ -152,7 +175,52 @@ header {
     letter-spacing: 1px;
 }
 
-.btn-planos:hover {
-    transform: translateY(-2px);
-    filter: brightness(1.15);
+/* --- ESTILOS DO RODAPÉ (FOOTER) --- */
+footer {
+    background-color: #1663CE;
+    color: white;
+    padding: 40px 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links .suporte {
+    margin-top: 10px;
+    font-size: 0.8em;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 0.75em;
+    opacity: 0.8;
+}
+
+.footer-equipe {
+    text-align: right;
+    font-size: 0.85em;
+    line-height: 1.6;
 }
