@@ -1,3 +1,4 @@
+/* Container principal das configurações */
 .configuracoes {
     display: flex;
     flex-direction: column;
@@ -10,14 +11,26 @@
     background-position: center;
 }
 
+.configuracoes-topicos
+{
+    width: 40%;
+}
+
+.space
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Alinhamento dos tópicos de reprodução */
 .Reproducao-topicos {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.btn-config 
-{
+/* Botão de configuração padrão */
+.btn-config {
     text-decoration: none;
     color: white;
     background-color: transparent;
@@ -26,11 +39,73 @@
     padding: 8px 24px;
 }
 
-.estado
-{
+.CaixaSelecao {
     color: white;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 10px;
     padding: 8px 24px;
+}
+
+.container-botao select,
+.container-botao select::picker(select) {
+    appearance: base-select;
+}
+
+
+/* SELECT FECHADO */
+
+.container-botao select {
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+
+/* SETINHA DO SELECT */
+
+.container-botao select::picker-icon {
+    display: none;
+}
+
+
+/* CAIXA QUE CONTÉM AS OPÇÕES */
+
+.container-botao select::picker(select) {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 24px;
+}
+
+
+/* OPÇÕES */
+
+.container-botao select option {
+    padding: 5px;
+
+
+    font-family: inherit;
+    font-size: 1em;
+
+    cursor: pointer;
+}
+
+
+/* OPÇÃO SELECIONADA */
+
+.container-botao select option:checked {
+    background-color: transparent;
+
+    font-weight: 600;
+}
+
+
+/* CHECK DA OPÇÃO SELECIONADA */
+
+.container-botao select option::checkmark {
+    display: none;
 }

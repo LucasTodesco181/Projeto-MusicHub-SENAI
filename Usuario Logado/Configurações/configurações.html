@@ -30,101 +30,104 @@
         </div>
     </header>
     <section class="configuracoes">
-        <h1>configurações</h1>
-        <div class="Reproducao-topicos">
-            <div class="info-conta">
-                <h2>Conta</h2>
-                <p>Nome de usuário • Premium • Segurança</p>
-            </div>
-            <div class="container-botao">
-                <a href="#" class="btn-config">editar</a>
-            </div>
-        </div>
-        <div class="area-config area-reproducao">
-            <h2>Reprodução</h2>
-            <div class="Reproducao-topicos">
-                <div class="info-reproducao">
-                    <h3>Transição gradual</h3>
-                    <p>Ajustar a duração da transição gradual entre os discos.</p>
-                </div>
-                <input type="radio">
-            </div>
-            <div class="Reproducao-topicos">
-                <div class="info-reproducao">
-                    <h3>Reprodução sem pausas </h3>
-                    <p>Remova qualquer lacuna ou pausas entre os discos.</p>
-                </div>
-                <input type="radio">
-            </div>
-            <div class="Reproducao-topicos">
-                <div class="info-reproducao">
-                    <h3>Nível de volume</h3>
-                    <p>Ajuste o volume de acordo com o ambiente.</p>
+        <div class="configuracoes-topicos">
+            <h1>configurações</h1>
+            <div class="Reproducao-topicos space">
+                <div class="info-conta" class="">
+                    <h2>Conta</h2>
+                    <p>Nome de usuário • Premium • Segurança</p>
                 </div>
                 <div class="container-botao">
-                    <select name="estado" id="estadoVolume">
-                        <option value="Silencio" >Silêncio</option>
-                        <option value="Normal" selected>Normal</option>
-                        <option value="Alto" >Alto</option>
-                    </select>
+                    <a href="#" class="btn-config">editar</a>
                 </div>
             </div>
-            <div class="area-config area-notificacoes">
-                <h2>Notificações</h2>
+            <div class="area-config area-reproducao">
+                <h2>Reprodução</h2>
                 <div class="Reproducao-topicos">
-                    <div class="info-notificacao">
-                        <h3>Seguindo</h3>
-                        <p>Receba notificações de novos lançamentos dos artistas que você segue.</p>
+                    <div class="info-reproducao">
+                        <h3>Transição gradual</h3>
+                        <p>Ajustar a duração da transição gradual entre os discos.</p>
                     </div>
                     <input type="radio">
                 </div>
                 <div class="Reproducao-topicos">
-                    <div class="info-notificacao">
-                        <h3>Shows e eventos ao vivio</h3>
-                        <p>Receba notificações de shows de seus artistas.</p>
+                    <div class="info-reproducao">
+                        <h3>Reprodução sem pausas </h3>
+                        <p>Remova qualquer lacuna ou pausas entre os discos.</p>
                     </div>
                     <input type="radio">
                 </div>
-                <div class="Reproducao-topicos">
-                    <div class="info-notificacao">
-                        <h3>Pacotes e ofertas</h3>
-                        <p>Receba notificações de promoções e novas ofertas  de  nossos planos </p>
-                    </div>
-                    <input type="radio">
-                </div>
-            </div>
-            <div class=" area-config area-acessibilidade">
-                <h2>acessibilidade</h2>
-                <div class="Reproducao-topicos">
-                    <div class="info-acessibilidade">
-                        <h3>Tema do aplicativo </h3>
-                        <p>Mude o tema do aplicativo de claro para escuro de acordo com as suas preferencia.</p>
+                <div class="Reproducao-topicos space">
+                    <div class="info-reproducao">
+                        <h3>Nível de volume</h3>
+                        <p>Ajuste o volume de acordo com o ambiente.</p>
                     </div>
                     <div class="container-botao">
-                    <select name="estado" id="estadoTema">
-                        <option value="Escuro" selected>Escuro</option>
-                        <option value="claro" >claro</option>
-                    </select>
-                </div>
-                </div>
-                <div class="Reproducao-topicos">
-                    <div class="info-acessibilidade">
-                        <h3>Idioma</h3>
-                        <p>Mude o idioma do site.</p>
+                        <select name="estado" class="CaixaSelecao">
+                            <option value="Silencio">Silêncio</option>
+                            <option value="Normal" selected>Normal</option>
+                            <option value="Alto">Alto</option>
+                        </select>
                     </div>
-                    <div class="container-botao">
-                    <select name="estado" id="estadoIdioma">
-                        <option value="Ingles" >Ingles</option>
-                        <option value="Portugues" selected>Português</option>
-                        <option value="Espanhol" >Espanhol</option>
-                    </select>
                 </div>
+                <div class="area-config area-notificacoes">
+                    <h2>Notificações</h2>
+                    <div class="Reproducao-topicos">
+                        <div class="info-notificacao">
+                            <h3>Seguindo</h3>
+                            <p>Receba notificações de novos lançamentos dos artistas que você segue.</p>
+                        </div>
+                        <input type="radio">
+                    </div>
+                    <div class="Reproducao-topicos">
+                        <div class="info-notificacao">
+                            <h3>Shows e eventos ao vivio</h3>
+                            <p>Receba notificações de shows de seus artistas.</p>
+                        </div>
+                        <input type="radio">
+                    </div>
+                    <div class="Reproducao-topicos">
+                        <div class="info-notificacao">
+                            <h3>Pacotes e ofertas</h3>
+                            <p>Receba notificações de promoções e novas ofertas de nossos planos </p>
+                        </div>
+                        <input type="radio">
+                    </div>
                 </div>
-                <div class="area-Suporte">
-                    <h4>musichub@suporte.com.br </h4>
-                    <h4>+55 (11) 94662-6067</h4>
+                <div class=" area-config area-acessibilidade">
+                    <h2>acessibilidade</h2>
+                    <div class="Reproducao-topicos space">
+                        <div class="info-acessibilidade">
+                            <h3>Tema do aplicativo </h3>
+                            <p>Mude o tema do aplicativo de claro para escuro de acordo com as suas preferencia.</p>
+                        </div>
+                        <div class="container-botao">
+                            <select name="estado" class="CaixaSelecao">
+                                <option value="Escuro" selected>Escuro</option>
+                                <option value="claro">claro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="Reproducao-topicos space">
+                        <div class="info-acessibilidade">
+                            <h3>Idioma</h3>
+                            <p>Mude o idioma do site.</p>
+                        </div>
+                        <div class="container-botao">
+                            <select name="estado" class="CaixaSelecao">
+                                <option value="Ingles">Ingles</option>
+                                <option value="Portugues" selected>Português</option>
+                                <option value="Espanhol">Espanhol</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="area-Suporte">
+                        <h4>musichub@suporte.com.br </h4>
+                        <h4>+55 (11) 94662-6067</h4>
+                    </div>
                 </div>
             </div>
     </section>
 </body>
+
 </html>
