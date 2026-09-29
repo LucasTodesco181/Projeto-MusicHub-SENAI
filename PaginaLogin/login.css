@@ -10,12 +10,17 @@ body {
 
 .logo {
     margin-top: 60px;
-    width: 30%;
+    width: 20%;
 
 }
 
+.titulos {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .titulo-grande {
-    margin-top: 100px;
+    
 
     font-size: 35px;
     color: var(--branco);
@@ -34,6 +39,8 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    gap: 40px;
 }
 
 /* CAMPOS */
@@ -46,7 +53,8 @@ main {
 
 input, 
 .botao-entrar,
-.botao-google
+.botao-google,
+.botao-apple
 {
     width: 100%;
     height: 50px;
@@ -58,7 +66,7 @@ input,
 
 .campo label {
 
-    margin-top: 30px;
+    
 
     color: var(--branco);
     font-size: 1em;
@@ -70,6 +78,7 @@ input,
     outline: none;
 
     background-color: var(--preto);
+    color: var(--branco);
 
     padding: 0 20px;
 
@@ -83,6 +92,7 @@ input,
 
 .campo-senha {
     position: relative;
+    
 }
 
 .botao-olho {
@@ -104,7 +114,7 @@ input,
 /* BOTAO ENTRAR  */
 
 .botao-entrar {
-    margin-top: 30px;
+    
     border: none;
     background-color: var(--azul-escuro);
     color: var(--branco);
@@ -114,20 +124,22 @@ input,
 
     text-transform: uppercase;
     transition: 0.4s;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(15, 17, 161, 0.25);
 }
 
 
 .botao-entrar:hover {
     cursor: pointer;
-    background-color: #344957;
+    background-color: #1543db;
 
     transform: translateY(-3px);
 }
 
 /* BOTAO GOOGLE */
 
-.botao-google {
+.botao-google,
+.botao-apple
+{
     border: none;
     background-color: var(--branco);
 
@@ -156,7 +168,11 @@ input,
 }
 
 form {
-      background: rgba(30, 65, 120, 0.45); 
+
+    display: flex;
+
+    flex-direction: column;
+    background: rgba(30, 65, 120, 0.45); 
   backdrop-filter: blur(12px);
 
 
@@ -165,6 +181,54 @@ form {
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-  width: 50%;
+  width: 30%;
   padding: 32px 24px;
+
+  gap: 30px;
+}
+
+.botao-apple img {
+    width: 30px;
+    height: 30px;
+}
+
+.botao-apple:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.ou {
+    color: var(--branco);
+    margin-top: 5px;
+    font-size: 1.8em;
+
+    margin-bottom: 20px;
+}
+
+
+.opcoes {
+    display: flex;
+    gap: 15px;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconesgoogleapple {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.criar-conta {
+    display: flex;
+    gap: 8px;
+    color: var(--branco);
+
+    font-size: 1.2em;
+}
+
+.criar-conta a {
+    color: var(--azul-claro);
+    font-size: 1.2em;
 }
