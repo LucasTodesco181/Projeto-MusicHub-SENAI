@@ -1,10 +1,23 @@
 @import url('https://googleapis.com');
 
 /* 2. Seus estilos */
-body { 
-    margin: 0; 
-    padding: 0; 
-    font-family: 'Murecho', sans-serif; 
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Murecho', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #1512a5;
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --azul-claro: #5E92DB;
+    --fundos: #E9F0EF;
+    --textos-paginas: #535353;
+    --cor-bordas: #cccccc;
+    --preto: #000000;
 }
 
 .btn-planos {
