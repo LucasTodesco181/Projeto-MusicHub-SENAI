@@ -1,111 +1,172 @@
-/* Container principal das configurações */
+/* ==========================================================================
+   1. ESTRUTURA E LAYOUT PRINCIPAL
+   ========================================================================== */
+
+/* Container principal da tela de configurações */
 .configuracoes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 120px;
     background-image: url(../../imgs/configurações.svg);
-    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
 }
 
-.configuracoes-topicos
-{
+/* Coluna principal que agrupa as categorias de configuração */
+.configuracoes-topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 40%;
 }
 
-.space
-{
+/* Bloco individual de cada tópico (ex: Conta, Reprodução) */
+.topico-config {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Linha individual de configuração e alinhamento dos controles à direita */
+.Area-config {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-/* Alinhamento dos tópicos de reprodução */
-.Reproducao-topicos {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* Limita a largura do texto para reservar espaço para os controles */
+.info-config {
+    width: 70%;
 }
 
-/* Botão de configuração padrão */
+
+/* ==========================================================================
+   2. BOTÕES E BOTÕES DE AÇÃO
+   ========================================================================== */
+
+/* Botão de ação padrão (ex: "Editar") */
 .btn-config {
+    padding: 8px 24px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
     text-decoration: none;
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 8px 24px;
 }
 
+
+/* ==========================================================================
+   3. CHECKBOX PERSONALIZADO
+   ========================================================================== */
+
+/* Container principal do checkbox */
+.container-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+/* Oculta o input checkbox nativo */
+.container-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Círculo externo (borda cinza) */
+.container-checkbox .checkmark {
+    width: 1.6em;
+    height: 1.6em;
+    border: 2px solid #888888;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Círculo interno (preenchimento azul com transição) */
+.container-checkbox .checkmark::after {
+    content: "";
+    width: 1.1em;
+    height: 1.1em;
+    background-color: #5E92DB;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+/* Exibe o círculo azul interno ao marcar */
+.container-checkbox input:checked + .checkmark::after {
+    transform: scale(1);
+}
+
+/* Efeito hover na borda externa do checkbox */
+.container-checkbox:hover .checkmark {
+    border-color: #aaaaaa;
+}
+
+
+/* ==========================================================================
+   4. CAIXA DE SELEÇÃO (SELECT CUSTOMIZADO)
+   ========================================================================== */
+
+/* Estilo base reutilizável da caixa de seleção */
 .CaixaSelecao {
-    color: white;
-    background-color: transparent;
+    padding: 8px 24px;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 8px 24px;
+    background-color: transparent;
+    color: white;
 }
 
+/* Habilita o modo totalmente customizável para o select nativo (Configurable Select API) */
 .container-botao select,
 .container-botao select::picker(select) {
     appearance: base-select;
 }
 
-
-/* SELECT FECHADO */
-
+/* Estado padrão do Select fechado */
 .container-botao select {
-
     display: flex;
     align-items: center;
     cursor: pointer;
-    
 }
 
-
-/* SETINHA DO SELECT */
-
+/* Oculta a seta dropdown padrão do sistema */
 .container-botao select::picker-icon {
     display: none;
 }
 
-
-/* CAIXA QUE CONTÉM AS OPÇÕES */
-
+/* Popover contendo a lista de opções dropdown */
 .container-botao select::picker(select) {
-    color: white;
-    background-color: transparent;
+    padding: 8px 24px;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 8px 24px;
+    background-color: var(--preto);
+    color: white;
 }
 
-
-/* OPÇÕES */
-
+/* Estilo de cada opção individual dentro da lista */
 .container-botao select option {
     padding: 5px;
-
-
-    font-family: inherit;
     font-size: 1em;
-
+    font-family: inherit;
     cursor: pointer;
 }
 
-
-/* OPÇÃO SELECIONADA */
-
+/* Estilo do item atualmente selecionado */
 .container-botao select option:checked {
     background-color: transparent;
-
     font-weight: 600;
 }
 
-
-/* CHECK DA OPÇÃO SELECIONADA */
-
+/* Oculta o ícone de 'check' nativo do item selecionado */
 .container-botao select option::checkmark {
     display: none;
 }

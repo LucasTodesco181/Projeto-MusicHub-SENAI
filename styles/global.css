@@ -1,10 +1,22 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Murecho:wght@100..900&display=swap');
 
-/* 2. Seus estilos */
-body { 
-    margin: 0; 
-    padding: 0; 
-    font-family: 'Murecho', sans-serif; 
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Murecho', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #1663CE;
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --azul-claro: #5E92DB;
+    --fundos: #E9F0EF;
+    --textos-paginas: #535353;
+    --cor-bordas: #cccccc;
+    --preto: #000000;
 }
 
 .btn-planos {
@@ -64,4 +76,12 @@ header
 
 .area-busca input:focus {
   outline: none;
+}
+
+p {
+ font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
 }
