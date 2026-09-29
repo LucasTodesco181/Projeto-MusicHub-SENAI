@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Murecho:wght@100..900&display=swap');
 
 *
 {
@@ -9,7 +9,7 @@
 }
 
 :root {
-    --azul-escuro: #1512a5;
+    --azul-escuro: #1663CE;
     --texto: #26333D;
     --branco: #FFFFFF;
     --azul-claro: #5E92DB;
@@ -76,4 +76,12 @@ header
 
 .area-busca input:focus {
   outline: none;
+}
+
+p {
+ font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
 }
