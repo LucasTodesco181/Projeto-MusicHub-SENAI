@@ -226,6 +226,8 @@ form {
     color: var(--branco);
 
     font-size: 1.2em;
+
+    align-items: center;
 }
 
 .criar-conta a {
