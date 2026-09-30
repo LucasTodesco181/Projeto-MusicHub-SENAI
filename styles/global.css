@@ -1,6 +1,87 @@
-BODY
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Murecho:wght@100..900&display=swap');
+
+*
 {
     margin: 0;
     padding: 0;
     font-family: 'Murecho', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #1663CE;
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --azul-claro: #5E92DB;
+    --fundos: #E9F0EF;
+    --textos-paginas: #535353;
+    --cor-bordas: #cccccc;
+    --preto: #000000;
+}
+
+.btn-planos {
+    padding: 5px 15px;
+    background-color: #5E92DB;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/*Header*/
+header
+{
+   background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navegacao
+{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 20px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.area-busca
+{
+    display: flex;
+    gap: 10px;
+}
+
+.area-busca input
+{
+    background: none;
+    border: none;
+    color: white;
+    
+}
+
+.area-busca input::placeholder
+{
+    color: #5E92DB;
+}
+
+.area-busca input:focus {
+  outline: none;
+}
+
+p {
+ font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
 }
