@@ -1,44 +1,145 @@
+*
+
 .cabecalho {
     display: flex;
-    flex-direction: row;
-    background-color: #000000;
-    height: 65px;
+    justify-content: space-between;
     
+    height: 10vh;
+    align-items: center;
+
+    background-color: #000000;
+    
+    padding: 0 25px;
+}
+
+.logo {
+    height: 50%;
+}
+
+
+
+.perfil {
+    display: flex;
+    height: 50%;
+    gap: 25px;
+}
+
+.campo {
+    display: flex;
+    gap: 25px;
 }
 
 .busca {
+    display: flex;
+    
     border-radius: 10px;
 
     background-color: #262626;
     height: 40px;
-    width: 260px;
+    width: 260px;    
+}
+
+.campo_busca {
+    display: flex;
+    gap: 25px;
 }
 
  .busca input {
     background-color: #262626;
     color: #ffffff;
     
+    border-radius: 10px;
     border: none;
+    width: 100%;
+    
 }
 
 .cabecalho input::placeholder {
     color: #5e92db;
 }
 
-.navegacao {
-    
-}
+
 
 /* main */
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E0E0E;
+
+    height: 90vh;
+}
 
 .alterar_senha  {
     background-color: #0E0E0E;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
 }
 
 .alterar_senha h1 {
     color: #ffffff;
+
+}
+
+.alterar {
+    background-color: #161616;
+    width: 100%;
+    border: none;
+    
 }
 
 .login {
     background-color: #161616;
+    display: flex;
+    flex-direction: column;
+border-radius: 10px;
+    gap: 50px;
+    height: 60vh;
+    padding: 60px;
+}
+
+ .login p {
+    color: #5E92DB;
+    margin-top: 10px;
+    
+}
+
+label {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sua_senha input {
+    background-color: #000000;
+    border-color: #1663CE;
+
+    height: 50px;
+    width: 60vh;
+    
+    border-radius: 10px;
+}
+
+.nova_senha input {
+    background-color: #000000;
+    border-color: #1663CE;
+    border-radius: 10px;
+
+    height: 50px;
+    width: 60vh;
+}
+
+.confirme_senha input {
+    background-color: #000000;
+    border-color: #1663CE;
+    border-radius: 10px;
+
+    height: 50px;
+    width: 60vh;
+}
+
+.sua_senha {
+     gap: 30px;
 }
