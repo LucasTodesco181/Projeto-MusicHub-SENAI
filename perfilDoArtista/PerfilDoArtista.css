@@ -1,0 +1,119 @@
+:root{--margem:24px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:100%;background:#000;color:#fff;font-family:"Segoe UI",Roboto,Arial,sans-serif}
+a{color:#fff}
+small{color:#9a9a9a;font-size:13px}
+.page{width:100%}
+h2{font-size:26px;font-weight:700;margin-bottom:22px}
+
+/* BARRA SUPERIOR */
+.topbar{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 var(--margem);background:#0b0b0b}
+.logo{font-size:20px;font-weight:700}
+.search{width:40%;max-width:480px;height:38px;padding:0 18px;border:1px solid #333;border-radius:19px;background:#161616;color:#fff;font-size:14px}
+.top-actions{display:flex;gap:12px}
+.btn-pill{padding:8px 20px;border:1px solid #333;border-radius:20px;background:#1c1c1c;color:#fff;font-size:14px;cursor:pointer}
+.btn-primary{background:#3b5bdb;border-color:#3b5bdb}
+
+/* HERO */
+.hero{position:relative;height:480px;margin-top:-64px;padding-top:64px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),#000 95%),radial-gradient(ellipse at 60% 30%,#6a6f7a,#2a2d34 40%,#000 80%)}
+.hero-content{position:absolute;left:var(--margem);right:var(--margem);bottom:30px;display:flex;align-items:flex-end;gap:36px}
+.avatar{flex:none;width:230px;height:230px;border:4px solid #1a1a1a;border-radius:50%;background:url("/imgs/foto-perfil-Evanescense.svg") center/cover}
+.handle-row{display:flex;align-items:center;gap:26px;font-size:18px}
+.handle{font-size:20px;font-weight:700}
+.verified{color:#4c8dff;font-size:15px}
+.listeners{margin:6px 0 14px;color:#cfcfcf;font-size:15px}
+.bio{max-width:520px;margin-bottom:16px;font-size:15px;line-height:1.5}
+.follow-row{display:flex;align-items:center;gap:18px}
+.btn-follow{padding:9px 28px;border:1px solid #555;border-radius:6px;background:#1f1f1f;color:#fff;font-size:14px;cursor:pointer}
+.social{font-size:20px;color:#ddd}
+
+/* CONTEÚDO */
+.content{width:100%;padding:20px var(--margem) 80px}
+.content section{margin-top:48px}
+.section-head{display:flex;justify-content:space-between;align-items:baseline}
+.section-head a{font-size:14px;color:#9a9a9a;text-decoration:none}
+
+/* POPULARES */
+.tracks{list-style:none}
+.tracks li{display:grid;grid-template-columns:40px 64px 1fr 220px 180px 80px;align-items:center;height:78px;font-size:17px}
+.track-num{font-size:18px}
+.track-thumb{width:52px;height:52px;border-radius:4px}
+.track-name{display:flex;flex-direction:column;gap:4px;padding-left:6px;font-weight:600}
+.track-plays{text-align:right;font-variant-numeric:tabular-nums}
+.track-icons{font-size:18px;letter-spacing:22px;color:#ddd;text-align:right}
+.track-time{text-align:right;color:#ddd}
+
+/* CAPAS */
+.thumb-1,.thumb-2,.thumb-3,.thumb-5{background:url("/imgs/capa-album-fallen.svg") center/cover}
+.thumb-4{background:url("/imgs/capa-album-theOpenDoor.svg") center/cover}
+
+/* ÁREA CENTRAL */
+.media-sections{width:95%;max-width:none;margin:0 auto}
+.grid{display:grid;gap:24px}
+.legenda{display:flex;flex-direction:column;gap:3px;margin-top:10px;font-size:15px}
+
+/* DISCOGRAFIA */
+.albums{grid-template-columns:repeat(6,1fr)}
+.albums .cover{aspect-ratio:1;border-radius:6px}
+.album-1{background:url("/imgs/discografia-theOpenDoor.svg") center/cover}
+.album-2{background:url("/imgs/discografia-Security.svg") center/cover}
+.album-3{background:url("/imgs/discografia-evansecense.svg") center/cover}
+.album-4{background:url("/imgs/discografia-anywhereButHome.svg") center/cover}
+.album-5{background:url("/imgs/discografia-theBitterTruth.svg") center/cover}
+.album-6{background:url("/imgs/discografia-AfterLife.svg") center/cover}
+
+/* VIDEOCLIPES */
+.videos{grid-template-columns:repeat(4,1fr)}
+.videos .cover{aspect-ratio:16/9;border-radius:6px}
+.video-1{background:url("/imgs/clipe-whoWillFollow.svg") center/cover}
+.video-2{background:url("/imgs/clipe=BringMeToLife.png") center/cover}
+.video-3{background:url("/imgs/clipe-goingUnder.svg") center/cover}
+.video-4{background:url("/imgs/clipe-callMeWhenYouSober.svg") center/cover}
+
+/* SHOWS */
+.shows{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 40px}
+.show{display:flex;align-items:center;gap:22px}
+.show h3{margin-bottom:8px;font-size:22px}
+.show p{color:#d0d0d0;font-size:16px;line-height:1.55}
+.star{flex:none;width:110px;height:110px;padding-top:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#3b4fd6;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.star span{font-size:13px}
+.star b{font-size:26px}
+
+/* SOBRE */
+.about{display:flex;align-items:flex-end;justify-content:center;width:100%;height:340px;padding:40px 10%;border-radius:10px;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.85)),radial-gradient(ellipse at 50% 20%,#5d6270,#15161a 70%)}
+.about p{font-size:22px;font-weight:600;line-height:1.5;text-align:center}
+
+.about {
+    width: 90%;
+    height: 340px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    border-radius: 10px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.65)),
+        url("/imgs/banner-evanescense.png") center/cover;
+}
+
+.about p {
+    max-width: 900px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.hero {
+    padding-top: 64px;
+}
