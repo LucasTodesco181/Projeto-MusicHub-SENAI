@@ -143,3 +143,23 @@ label {
 .sua_senha {
      gap: 30px;
 }
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1663CE;
+    color: #ffffff;
+
+    height: 75px;
+    width: 300px;
+
+    border-radius: 10px;
+    border: none;
+}
