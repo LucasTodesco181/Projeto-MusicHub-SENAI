@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Músicas para Todos os Gostost</title>
+    <link rel="stylesheet" href="criarPlaylist.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="shortcut icon" href="../imgs/Logo.svg">
+</head>
+<body>
+    
+    <header>
+        <img src="../../imgs/Logo.svg" alt="Logo do site">
+        <div class="navegacao">
+            <img src="../../imgs/Inicio.svg" alt="icone de home">
+            <div class="area-busca">
+                <img src="../../imgs/Component.svg" alt="lupa que fica no campo de pesquisa">
+                <input type="text" placeholder="Eai? Ta afim de ouvir oque?">
+            </div>
+            <img src="../../imgs/bussola.svg" alt="icone de bussula">
+            <img src="../../imgs/Vector.svg" alt="icone de plalist">
+        </div>
+        <div class="info">
+            <div class="container-botao">
+                <a href="#" class="btn-planos">PLANOS</a>
+            </div>
+            <img src="../../imgs/Foto perfil.svg" alt="foto de perfil">
+            <img src="../../imgs/Config.svg" alt="icone de configuração">
+        </div>
+    </header>
+ 
+  <main class="criar-playlist">
+        <h1 class="titulo">Crie uma playlist com músicas ou episódios</h1>
+ 
+        <form class="formulario-playlist">
+            <div class="capa-playlist">
+                <div class="disco"></div>
+                <button type="button" class="btn-editar-capa" aria-label="Editar capa">
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+                        <path d="M16 3.5 20.5 8 8 20.5l-5 1 1-5zM14 6l4.5 4.5M3 22h8"/>
+                    </svg>
+                </button>
+            </div>
+ 
+            <div class="campo-nome">
+                <input type="text" value="Minha playlist #1" aria-label="Nome da playlist">
+                <svg class="icone-editar-nome" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+                    <path d="M16 3.5 20.5 8 8 20.5l-5 1 1-5zM14 6l4.5 4.5M3 22h8"/>
+                </svg>
+            </div>
+ 
+            <div class="botoes">
+                <button type="button" class="btn-cancelar">Cancelar</button>
+                <button type="submit" class="btn-criar">Criar</button>
+            </div>
+        </form>
+    </main>
+ 
+    <script src="criarPlaylist.js"></script>
+</body>
+</html>
+ 
