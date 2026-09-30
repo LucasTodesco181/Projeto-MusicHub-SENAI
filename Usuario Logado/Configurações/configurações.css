@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Murecho:wght@100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Murecho', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #1663CE;
+    --texto: #26333D;
+    --branco: #FFFFFF;
+    --azul-claro: #5E92DB;
+    --fundos: #E9F0EF;
+    --textos-paginas: #535353;
+    --cor-bordas: #cccccc;
+    --preto: #000000;
+}
+
+.btn-planos {
+    padding: 5px 15px;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/*Header*/
+header
+{
+   background-color: var(--preto);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navegacao
+{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 20px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.area-busca
+{
+    display: flex;
+    gap: 10px;
+}
+
+.area-busca input
+{
+    background: none;
+    border: none;
+    color: var(--branco);
+    
+}
+
+.area-busca input::placeholder
+{
+    color: var(--azul-claro);
+}
+
+.area-busca input:focus {
+  outline: none;
+}
+
+p {
+ font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* ==========================================================================
+   1. ESTRUTURA E LAYOUT PRINCIPAL
+   ========================================================================== */
+
+/* Container principal da tela de configurações */
+.configuracoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px;
+    background-image: url(../../imgs/configurações.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+}
+
+/* Coluna principal que agrupa as categorias de configuração */
+.configuracoes-topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+/* Bloco individual de cada tópico (ex: Conta, Reprodução) */
+.topico-config {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Linha individual de configuração e alinhamento dos controles à direita */
+.Area-config {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Limita a largura do texto para reservar espaço para os controles */
+.info-config {
+    width: 70%;
+}
+
+
+/* ==========================================================================
+   2. BOTÕES E BOTÕES DE AÇÃO
+   ========================================================================== */
+
+/* Botão de ação padrão (ex: "Editar") */
+.btn-config {
+    padding: 8px 24px;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   3. CHECKBOX PERSONALIZADO
+   ========================================================================== */
+
+/* Container principal do checkbox */
+.container-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+/* Oculta o input checkbox nativo */
+.container-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Círculo externo (borda cinza) */
+.container-checkbox .checkmark {
+    width: 1.6em;
+    height: 1.6em;
+    border: 2px solid var(--cor-bordas);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Círculo interno (preenchimento azul com transição) */
+.container-checkbox .checkmark::after {
+    content: "";
+    width: 1.1em;
+    height: 1.1em;
+    background-color: var(--azul-claro);
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+/* Exibe o círculo azul interno ao marcar */
+.container-checkbox input:checked + .checkmark::after {
+    transform: scale(1);
+}
+
+/* Efeito hover na borda externa do checkbox */
+.container-checkbox:hover .checkmark {
+    border-color: #aaaaaa;
+}
+
+
+/* ==========================================================================
+   4. CAIXA DE SELEÇÃO (SELECT CUSTOMIZADO)
+   ========================================================================== */
+
+/* Estilo base reutilizável da caixa de seleção */
+.CaixaSelecao {
+    padding: 8px 24px;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--branco);
+}
+
+/* Habilita o modo totalmente customizável para o select nativo (Configurable Select API) */
+.container-botao select,
+.container-botao select::picker(select) {
+    appearance: base-select;
+}
+
+/* Estado padrão do Select fechado */
+.container-botao select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Oculta a seta dropdown padrão do sistema */
+.container-botao select::picker-icon {
+    display: none;
+}
+
+/* Popover contendo a lista de opções dropdown */
+.container-botao select::picker(select) {
+    padding: 8px 24px;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* Estilo de cada opção individual dentro da lista */
+.container-botao select option {
+    padding: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Estilo do item atualmente selecionado */
+.container-botao select option:checked {
+    background-color: transparent;
+    font-weight: 600;
+}
+
+/* Oculta o ícone de 'check' nativo do item selecionado */
+.container-botao select option::checkmark {
+    display: none;
+}
