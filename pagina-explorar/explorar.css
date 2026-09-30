@@ -1,0 +1,67 @@
+* {
+    /* se eu colocar padding, borda -> é incluido no tamanho total do elemento */
+    /* evita que aumente a caixa dos elementos */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-image: url(../imgs/pagina\ explorar\ com\ login\ -\ victor.svg);
+    color: #222222;
+}
+
+.cabecalho {
+    color: #FFFFFF;
+    text-align: end;
+    padding: 30px;
+    background-color: transparent;
+}
+
+h1 {
+    margin-top: 75px;
+    text-align: end;
+    /* margin-left: 75px; */
+}
+h2{
+    color: var(--branco);
+    /* margin-left: 105px; */
+    padding: auto;
+}
+.conteudo {
+    /* margin: auto 330px; */
+    width: 70%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegar {
+    /* margin-bottom: 40px; */
+    color: #FFFFFF;
+}
+
+.tipos {
+    display: flex;
+     grid-template-columns: repeat(5, 20%);
+     cursor: pointer;
+      justify-content: center;
+
+}
+
+.genero img {
+    width: 180px;
+    height: 180px;
+}
+
+.tipos-{
+    display: grid;
+     grid-template-columns: repeat(7, 20%);
+     cursor: pointer;
+
+}
+
+.album img {
+    width: 50px;
+    height: 50px;
+}
