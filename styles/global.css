@@ -30,7 +30,7 @@
     letter-spacing: 1px;
 }
 
-/*Header*/
+/*Header Logado*/
 header
 {
    background-color: black;
@@ -38,6 +38,7 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
 }
 
 .navegacao
