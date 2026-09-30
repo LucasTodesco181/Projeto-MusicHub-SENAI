@@ -1,17 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #000;
-    height: 60px;
-    padding: 10px 40px;
-    align-items: center;
-}
 
 .btns {
     display: flex;
@@ -82,10 +68,10 @@ header {
 }
 
 .meio {
-    background-image: url(../imgs/imagem-de-fundo-1.jpg);
+    background-image: url(../imgs/retanguloEstilizacaoLandingPage.svg), url(../imgs/imagem-de-fundo-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% ,cover;
+    background-position: bottom, center;
     min-height: 80vh;
     color: white;
     display: flex;
@@ -104,11 +90,11 @@ header {
 }
 
 .container-vip {
-    background-image: url(../imgs/imagem-de-fundo-2.svg);
+    background-image: url(../imgs/Rectangle\ 95.svg),url(../imgs/imagem-de-fundo-2.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 90vh;
+    background-size: 100% , cover;
+    background-position: bottom , center;
+    min-height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -117,10 +103,10 @@ header {
 
 .conteudo-vip {
     width: 60%;
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     color: white;
 }
 
@@ -149,7 +135,7 @@ header {
     font-size: 1em;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 6px;
 }
 
@@ -203,6 +189,12 @@ footer {
     font-size: 0.8em;
     line-height: 1.4;
     opacity: 0.9;
+}
+
+span {
+  width: 2px;
+  height: 150px;
+  background-color: white;
 }
 
 .footer-brand {
