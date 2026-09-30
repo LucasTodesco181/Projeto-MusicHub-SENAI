@@ -31,7 +31,7 @@
 }
 
 /*Header*/
-header
+.header-logado, header
 {
    background-color: black;
     display:flex;
@@ -86,4 +86,9 @@ p {
 
 h1 {
     font-size: 2em;
+}
+
+body:has(.header-logado) > section:first-of-type
+{
+    padding-top: 57px;
 }
