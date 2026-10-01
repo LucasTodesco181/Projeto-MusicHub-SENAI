@@ -1,3 +1,11 @@
+header
+{
+   background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 
 .btns {
     display: flex;
@@ -30,7 +38,7 @@
 
 .inicio {
     background-color: #000;
-    background-image: url(../imgs/banner-principal.png);
+    background-image: url(../../imgs/banner-principal.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -68,7 +76,7 @@
 }
 
 .meio {
-    background-image: url(../imgs/retanguloEstilizacaoLandingPage.svg), url(../imgs/imagem-de-fundo-1.jpg);
+    background-image: url(../../imgs/retanguloEstilizacaoLandingPage.svg), url(../../imgs/imagem-de-fundo-1.jpg);
     background-repeat: no-repeat;
     background-size: 100% ,cover;
     background-position: bottom, center;
@@ -90,7 +98,7 @@
 }
 
 .container-vip {
-    background-image: url(../imgs/Rectangle\ 95.svg),url(../imgs/imagem-de-fundo-2.svg);
+    background-image: url(../../imgs/Rectangle95.svg),url(../../imgs/imagem-de-fundo-2.svg);
     background-repeat: no-repeat;
     background-size: 100% , cover;
     background-position: bottom , center;
