@@ -1,0 +1,226 @@
+header
+{
+   background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btns a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px 24px;
+}
+
+.btn-planos-head {
+    background-color: #5E92DB;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-primary {
+    background-color: #1663CE;
+}
+
+.inicio {
+    background-color: #000;
+    background-image: url(../../imgs/banner-principal.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    color: white;
+    min-height: 80vh;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.2em;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+.meio {
+    background-image: url(../../imgs/retanguloEstilizacaoLandingPage.svg), url(../../imgs/imagem-de-fundo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% ,cover;
+    background-position: bottom, center;
+    min-height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.meio-content {
+    max-width: 800px;
+}
+
+.meio p {
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.container-vip {
+    background-image: url(../../imgs/Rectangle95.svg),url(../../imgs/imagem-de-fundo-2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% , cover;
+    background-position: bottom , center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 8%;
+}
+
+.conteudo-vip {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.conteudo-vip h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.conteudo-vip .texto {
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.conteudo-vip .subtitulo {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.beneficios-vip {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.beneficios-vip li {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.beneficios-vip li::before {
+    content: "★";
+    margin-right: 8px;
+    color: #fff;
+}
+
+.container-botao {
+    margin-top: 15px;
+}
+
+.btn-planos {
+    display: inline-block;
+    padding: 10px 35px;
+    background-color: #5E92DB;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/* --- ESTILOS DO RODAPÉ (FOOTER) --- */
+footer {
+    background-color: #1663CE;
+    color: white;
+    padding: 40px 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links .suporte {
+    margin-top: 10px;
+    font-size: 0.8em;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+span {
+  width: 2px;
+  height: 150px;
+  background-color: white;
+}
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 0.75em;
+    opacity: 0.8;
+}
+
+.footer-equipe {
+    text-align: right;
+    font-size: 0.85em;
+    line-height: 1.6;
+}

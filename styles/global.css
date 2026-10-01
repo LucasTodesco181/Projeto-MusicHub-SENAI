@@ -30,8 +30,8 @@
     letter-spacing: 1px;
 }
 
-/*Header*/
-.header-logado, header
+/*Header Logado*/
+.header-logado
 {
    background-color: black;
     display:flex;
