@@ -138,7 +138,7 @@ background: rgba(0, 0, 0, 0.685);
   -webkit-backdrop-filter: blur(12px);
 
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: none;
+  border-radius: 16px;
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
@@ -244,4 +244,402 @@ button:hover {
 
 
 
+/* Parte 4 */
+
+.fundo-planos2 {
+    height: 90vh;
+
+    
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 23%, rgba(0, 0, 0, 1) 100%),
+    url(../imgs/Rectangle\ 87.svg);
+    background-size: cover;
+
+
+    padding: 50px 0;
+}
+
+
+
+
+.quadrado2 {
+background: rgba(0, 0, 0, 0.685); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  width: 50%;
+  height: 80%;
+  padding: 32px 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+
+}
+
+.fundo-planos2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 150px;
+    
+}
+
+.quadrado2 {
+    color: var(--branco);
+    gap: 45px;
+    display: flex;
+}
+
+.quadrado2 h1 {
+    color: var(--azul-claro);
+    
+}
+
+button {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border-radius: 16px;
+    font-size: 1.6em;
+
+
+    height: 15%;
+    display: flex;
+    background-color: none;
+
+    
+   align-self: center;
+    
+
+    cursor: pointer;
+
+    align-items: center;
+
+    padding: 0 1em;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.titulo-1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8em;
+
+    gap: 5px;
+}
+
+.titulo-1 h1 {
+    font-size: 2.9em;
+}
+
+.efeito {
+    color: gray;
+}
+
+.linha {
+    background-color: var(--branco);
+    height: 1px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+    font-size: 1.6em;
+}
+
+
+.frase-final {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+
+}
+
+
+
+
+
+/* --------------------------- */
+
+.fundo-planos3 {
+    height: 90vh;
+
+    
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 23%, rgba(0, 0, 0, 1) 100%),
+    url(../imgs/Rectangle\ 93\ \(1\).svg);
+    background-size: cover;
+
+
+    padding: 50px 0;
+}
+
+
+
+
+.quadrado3 {
+background: rgba(0, 0, 0, 0.685); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  width: 50%;
+  height: 80%;
+  padding: 32px 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+
+}
+
+.fundo-planos3 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 150px;
+    
+}
+
+.quadrado3 {
+    color: var(--branco);
+    gap: 45px;
+    display: flex;
+}
+
+.quadrado3 h1 {
+    color: var(--azul-claro);
+    
+}
+
+button {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border-radius: 16px;
+    font-size: 1.6em;
+
+
+    height: 15%;
+    display: flex;
+    background-color: none;
+
+    
+   align-self: center;
+    
+
+    cursor: pointer;
+
+    align-items: center;
+
+    padding: 0 1em;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.titulo-1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8em;
+
+    gap: 5px;
+}
+
+.titulo-1 h1 {
+    font-size: 2.9em;
+}
+
+.efeito {
+    color: gray;
+}
+
+.linha {
+    background-color: var(--branco);
+    height: 1px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+    font-size: 1.6em;
+}
+
+
+.frase-final {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+
+}
+
+
+
+
+
+
+/* ******************************** */
+
+.fundo-planos5 {
+    height: 90vh;
+
+    
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 23%, rgba(0, 0, 0, 1) 100%),
+    url(../imgs/Rectangle\ 86.svg);
+    background-size: cover;
+
+
+    padding: 50px 0;
+}
+
+
+
+
+.quadrado5 {
+background: rgba(0, 0, 0, 0.685); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  width: 50%;
+  height: 80%;
+  padding: 32px 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+
+}
+
+.fundo-planos5 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 150px;
+    
+}
+
+.quadrado5 {
+    color: var(--branco);
+    gap: 45px;
+    display: flex;
+}
+
+.quadrado5 h1 {
+    color: var(--azul-claro);
+    
+}
+
+button {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border-radius: 16px;
+    font-size: 1.6em;
+
+
+    height: 15%;
+    display: flex;
+    background-color: none;
+
+    
+   align-self: center;
+    
+
+    cursor: pointer;
+
+    align-items: center;
+
+    padding: 0 1em;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.titulo-1 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8em;
+
+    gap: 5px;
+}
+
+.titulo-1 h1 {
+    font-size: 2.9em;
+}
+
+.efeito {
+    color: gray;
+}
+
+.linha {
+    background-color: var(--branco);
+    height: 1px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+    font-size: 1.6em;
+}
+
+
+.frase-final {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+
+}
 
