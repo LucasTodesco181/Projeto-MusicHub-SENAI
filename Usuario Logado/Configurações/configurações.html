@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="configurações.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+
+    <title>configurações</title>
+</head>
+
+<body>
+     <!-- ========================================== -->
+    <!-- CABEÇALHO / NAVEGAÇÃO PRINCIPAL            -->
+    <!-- ========================================== -->
+    <header class="header-logado">
+        <!-- Logo -->
+        <a href="" class="container-link">
+            <img src="../../imgs/Logo.svg" alt="Logo do site">
+        </a>
+
+        <!-- Menu Central e Campo de Busca -->
+        <div class="navegacao">
+            <a href="" class="container-link">
+                <img src="../../imgs/Inicio.svg" alt="icone de home">
+            </a>
+            <div class="area-busca">
+                <img src="../../imgs/Component.svg" alt="lupa que fica no campo de pesquisa">
+                <input type="text" placeholder="Eai? Ta afim de ouvir oque?">
+            </div>
+            <a href="" class="container-link">
+                <img src="../../imgs/bussola.svg" alt="icone de bussula">
+            </a>
+            <a href="" class="container-link">
+                <img src="../../imgs/Vector.svg" alt="icone de plalist">
+            </a>
+        </div>
+
+        <!-- Perfil e Ações do Usuário -->
+        <div class="info">
+            <div class="container-botao">
+                <a href="#" class="btn-planos">PLANOS</a>
+            </div>
+            <a href="" class="container-link">
+                <img src="../../imgs/Foto perfil.svg" alt="foto de perfil">
+            </a>
+            <a href="" class="container-link">
+                <img src="../../imgs/Config.svg" alt="icone de configuração">
+            </a>
+        </div>
+    </header>
+    <!-- ========================================== -->
+    <!-- SEÇÃO PRINCIPAL - CONFIGURAÇÕES            -->
+    <!-- ========================================== -->
+    <section class="configuracoes">
+        <div class="configuracoes-topicos">
+            <h1>configurações</h1>
+
+            <!-- -------------------------------------- -->
+            <!-- TÓPICO: Conta                          -->
+            <!-- -------------------------------------- -->
+            <div class="topico-config">
+                <h2>Conta</h2>
+                <div class="Area-config item-espacado">
+                    <div class="info-config">
+                        <p>Nome de usuário • Premium • Segurança</p>
+                    </div>
+                    <div class="container-botao">
+                        <a href="#" class="btn-config">editar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------------------------- -->
+            <!-- TÓPICO: Reprodução                     -->
+            <!-- -------------------------------------- -->
+            <div class="topico-config">
+                <h2>Reprodução</h2>
+
+                <!-- Opção: Transição gradual -->
+                <div class="Area-config">
+                    <div class="info-config">
+                        <h3>Transição gradual</h3>
+                        <p>Ajustar a duração da transição gradual entre os discos.</p>
+                    </div>
+                    <label class="container-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- Opção: Reprodução sem pausas -->
+                <div class="Area-config">
+                    <div class="info-config">
+                        <h3>Reprodução sem pausas </h3>
+                        <p>Remova qualquer lacuna ou pausas entre os discos.</p>
+                    </div>
+                    <label class="container-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- Opção: Nível de volume -->
+                <div class="Area-config item-espacado">
+                    <div class="info-config">
+                        <h3>Nível de volume</h3>
+                        <p>Ajuste o volume de acordo com o ambiente.</p>
+                    </div>
+                    <div class="container-botao">
+                        <select name="estado" class="CaixaSelecao">
+                            <option value="Silencio">Silêncio</option>
+                            <option value="Normal" selected>Normal</option>
+                            <option value="Alto">Alto</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------------------------- -->
+            <!-- TÓPICO: Notificações                   -->
+            <!-- -------------------------------------- -->
+            <div class="topico-config">
+                <h2>Notificações</h2>
+
+                <!-- Notificação: Artistas seguidos -->
+                <div class="Area-config">
+                    <div class="info-config">
+                        <h3>Seguindo</h3>
+                        <p>Receba notificações de novos lançamentos dos artistas que você segue.</p>
+                    </div>
+                    <label class="container-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- Notificação: Shows e eventos -->
+                <div class="Area-config">
+                    <div class="info-config">
+                        <h3>Shows e eventos ao vivio</h3>
+                        <p>Receba notificações de shows de seus artistas.</p>
+                    </div>
+                    <label class="container-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <!-- Notificação: Pacotes e ofertas -->
+                <div class="Area-config">
+                    <div class="info-config">
+                        <h3>Pacotes e ofertas</h3>
+                        <p>Receba notificações de promoções e novas ofertas de nossos planos </p>
+                    </div>
+                    <label class="container-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- -------------------------------------- -->
+            <!-- TÓPICO: Acessibilidade                 -->
+            <!-- -------------------------------------- -->
+            <div class="topico-config">
+                <h2>acessibilidade</h2>
+
+                <!-- Acessibilidade: Tema -->
+                <div class="Area-config item-espacado">
+                    <div class="info-config">
+                        <h3>Tema do aplicativo </h3>
+                        <p>Mude o tema do aplicativo de claro para escuro de acordo com as suas preferencia.</p>
+                    </div>
+                    <div class="container-botao">
+                        <select name="estado" class="CaixaSelecao">
+                            <option value="Escuro" selected>Escuro</option>
+                            <option value="claro">claro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Acessibilidade: Idioma -->
+                <div class="Area-config item-espacado">
+                    <div class="info-config">
+                        <h3>Idioma</h3>
+                        <p>Mude o idioma do site.</p>
+                    </div>
+                    <div class="container-botao">
+                        <select name="estado" class="CaixaSelecao">
+                            <option value="Ingles">Ingles</option>
+                            <option value="Portugues" selected>Português</option>
+                            <option value="Espanhol">Espanhol</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------------------------------- -->
+            <!-- RODAPÉ DE SUPORTE / CONTATO            -->
+            <!-- -------------------------------------- -->
+            <div class="topico-config">
+                <h2>Suporte</h2>
+                <h4>musichub@suporte.com.br </h4>
+                <h4>+55 (11) 94662-6067</h4>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
