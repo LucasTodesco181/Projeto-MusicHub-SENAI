@@ -69,4 +69,22 @@
     gap: 10px;
 }
 
-.
+.container-btn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.btn-AlterarSenha
+{
+    border: none;
+     background-color: var(--azul-escuro);
+     padding: 5px 10px;
+     border-radius: 10px;
+     color: var(--branco);
+     font-weight: 700;
+     text-decoration: none;
+}
