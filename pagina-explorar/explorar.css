@@ -9,6 +9,8 @@
 body {
    background-image: url(../imgs/pagina\ explorar\ com\ login\ -\ victor.svg);
     color: #222222;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cabecalho {
@@ -19,49 +21,72 @@ body {
 }
 
 h1 {
-    margin-top: 75px;
-    text-align: end;
+    margin-top: 120px;
+    text-align: start;
+    margin-left: 70px;
     /* margin-left: 75px; */
 }
 h2{
     color: var(--branco);
     /* margin-left: 105px; */
-    padding: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--branco);
+}
+
+h4 {
+    color: var(--branco);
 }
 .conteudo {
     /* margin: auto 330px; */
     width: 70%;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1200px;
+    margin: 0 auto;
 }
 
 .navegar {
     /* margin-bottom: 40px; */
-    color: #FFFFFF;
+    color: var(--branco)
 }
 
 .tipos {
     display: flex;
-     grid-template-columns: repeat(5, 20%);
+     /* grid-template-columns: repeat(5, 20%); */
      cursor: pointer;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 15px;
 
 }
 
 .genero img {
     width: 180px;
     height: 180px;
+    object-fit: cover;
 }
 
-.tipos-{
-    display: grid;
-     grid-template-columns: repeat(7, 20%);
+.tipos-albuns {
+      display: flex;
+     cursor: pointer;
+      justify-content: space-between;
+     /* align-items: center;  */
+      width: 100%;
+      gap: 5px;
+
      cursor: pointer;
 
 }
 
 .album img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.lançamentos h2 {
+    text-align: start;
 }
