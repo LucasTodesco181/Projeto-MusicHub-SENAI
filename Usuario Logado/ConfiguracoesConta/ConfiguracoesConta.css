@@ -1,117 +1,333 @@
-.ConfigucacoesConta
-{
-    padding: 120px ;
-    color: var(--branco);
-    background-image: url(../../imgs/fundoPag-ConfigConta.svg);
+
+/* ==========================================================================
+   1. ESTRUTURA GERAL DA PÁGINA
+   ========================================================================== */
+.ConfigucacoesConta {
+    padding: 60px 120px;
+    background-image: url('../../imgs/fundoPag-ConfigConta.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: var(--branco);
-    
+    color: var(--branco, #ffffff);
+    font-family: sans-serif;
+
+
 }
 
-.InfoConfigConta
-{
-      width: 30%;
-      display: flex;
+.InfoConfigConta {
+    max-width: 100%;
+    display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 32px;
+    width: 40%;
 }
 
-.AreaInfo
+.InfoConfigConta h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.AreaConfigConta h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.AreaConfigConta img
 {
+  box-sizing:content-box;
+}
+
+/* ==========================================================================
+   2. INPUTS E CAMPOS DE EDICÃO
+   ========================================================================== */
+.AreaInfo {
     display: flex;
-    gap: 50px;
-    padding-top: 20px;
+    gap: 24px;
 }
 
-.AreaInput
-{
+.AreaInput {
     display: flex;
-    flex-direction: column ;
-    gap: 10px;
+    flex-direction: column;
+    gap: 6px;
 }
 
-.AreaDentroInput
-{
+.AreaInput h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.AreaDentroInput {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
 }
 
-.AreaDentroInput input
-{
-    border: 0.5px var(--branco) solid;
+.AreaDentroInput input {
+    border: 1px solid var(--branco, #ffffff);
     background: transparent;
-    padding: 5px;
-    padding-left: 10px;
-    border-radius: 10px;
-    color: var(--branco);
-}
-.AreaDentroInput input::placeholder
-{
-    color: var(--branco);
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--branco, #ffffff);
+    outline: none;
+    width: 180px;
 }
 
-.AreaDentroInput img
-{
-    background-color: var(--azul-escuro);
-    border-radius: 10px;
-    padding: 5px;
+.AreaDentroInput input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.AreaInfoSenha
-{
+.AreaDentroInput .container-editar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AreaDentroInput img {
+    background-color: #2b7fff;
+    color:var(--branco);
+    border-radius: 8px;
+    padding: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+/* ==========================================================================
+   3. SEÇÃO DE SENHA E PERFIL
+   ========================================================================== */
+.AreaInfoSenha h3 {
+    font-size: 1rem;
+    margin: 0 0 6px 0;
+}
+
+.AreaInfoSenha p {
+    font-size: 0.75rem;
+    color: #cccccc;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-AlterarSenha {
+    background-color: #2b7fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: var(--branco, #ffffff);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.AreaInfoPerfil {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.AreaInfoPerfil h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.btn-Editar, .btn-Gerenciar {
+    padding: 6px 24px;
+    border: 1px solid var(--branco, #ffffff);
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--branco, #ffffff);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   4. APLICATIVOS CONECTADOS
+   ========================================================================== */
+.aplicativosDesconectados {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.aplicativosDesconectados img {
+    width: 28px;
+    height: 28px;
+    background-color: #1a1a1a;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.aplicativosConectados {
+    display: flex;
     flex-direction: column;
-    padding-top: 20px;
     gap: 10px;
 }
 
-.container-btn
-{
+.aplicativoConectado {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 12px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+    gap: 12px;
 }
 
-.btn-AlterarSenha
-{
+.conteudoCardApp {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.descricaoAplicativo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.descricaoAplicativo img {
+    width: 20px;
+    height: 20px;
+}
+
+.descricaoAplicativo h4 {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.descricaoAplicativo p {
+    margin: 2px 0 0 0;
+    font-size: 0.7rem;
+    color: #888888;
+}
+
+.btn-fechar {
+    background: transparent;
     border: none;
-     background-color: var(--azul-escuro);
-     padding: 5px 10px;
-     border-radius: 10px;
-     color: var(--branco);
-     font-weight: 700;
-     text-decoration: none;
+    color: #666666;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
 }
 
-.AreaInfoPerfil
-{
+.estadoPerfil {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding-top: 10px;
 }
 
-.container-btn-Editar
-{
+.estadoPerfil p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #aaaaaa;
+}
+
+/* ==========================================================================
+   5. EXIBIÇÃO NO PERFIL & ASSINATURA
+   ========================================================================== */
+.AreaExibicaoPerfil {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 16px;
+}
+
+.itemExibicao {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.AreaInfoPerfil a
+.itemExibicao h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.itemExibicao p {
+    margin: 2px 0 0 0;
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.AreaAssinatura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AreaAssinatura h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* ==========================================================================
+   6. CHECKBOX PERSONALIZADO
+   ========================================================================== */
+
+/* Container principal do checkbox */
+.container-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+/* Oculta o input checkbox nativo */
+.container-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Círculo externo (borda cinza) */
+.container-checkbox .checkmark {
+    width: 0.9em;
+    height: 0.9em;
+    border: 2px solid var(--cor-bordas);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Círculo interno (preenchimento azul com transição) */
+.container-checkbox .checkmark::after {
+    content: "";
+    width: 0.4em;
+    height: 0.4em;
+    background-color: var(--azul-claro);
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+/* Exibe o círculo azul interno ao marcar */
+.container-checkbox input:checked + .checkmark::after {
+    transform: scale(1);
+}
+
+/* Efeito hover na borda externa do checkbox */
+.container-checkbox:hover .checkmark {
+    border-color: #aaaaaa;
+}
+
+.AreaExibicaoPerfil .container-checkbox .checkmark 
 {
-    padding: 8px 24px;
-    border: 1px solid var(--branco);
-    border-radius: 10px;
-    background-color: transparent;
-    color: var(--branco);
-    text-decoration: none;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.AreaExibicaoPerfil .container-checkbox .checkmark::after 
+{
+    width: 1.1em;
+    height: 1.1em;
 }
