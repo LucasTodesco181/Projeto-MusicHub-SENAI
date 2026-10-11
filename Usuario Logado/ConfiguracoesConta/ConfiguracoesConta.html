@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="ConfiguracoesConta.css">
+
+    <title>Configurações de Conta</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO / NAVEGAÇÃO PRINCIPAL -->
+    <header class="header-logado">
+        <a href="#" class="container-link">
+            <img src="../../imgs/Logo.svg" alt="Logo do site">
+        </a>
+
+        <div class="navegacao">
+            <a href="#" class="container-link">
+                <img src="../../imgs/Inicio.svg" alt="icone de home">
+            </a>
+            <div class="area-busca">
+                <img src="../../imgs/Component.svg" alt="lupa que fica no campo de pesquisa">
+                <input type="text" placeholder="Eai? Ta afim de ouvir oque?">
+            </div>
+            <a href="#" class="container-link">
+                <img src="../../imgs/bussola.svg" alt="icone de bussula">
+            </a>
+            <a href="#" class="container-link">
+                <img src="../../imgs/Vector.svg" alt="icone de plalist">
+            </a>
+        </div>
+
+        <div class="info">
+            <div class="container-botao">
+                <a href="#" class="btn-planos">PLANOS</a>
+            </div>
+            <a href="#" class="container-link">
+                <img src="../../imgs/Foto perfil.svg" alt="foto de perfil">
+            </a>
+            <a href="#" class="container-link">
+                <img src="../../imgs/Config.svg" alt="icone de configuração">
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DE CONFIGURAÇÕES -->
+    <section class="ConfigucacoesConta">
+        <div class="InfoConfigConta">
+            <h1>Conta</h1>
+
+            <!-- Informações da Conta -->
+            <div class="AreaConfigConta">
+                <h2>Informações da conta</h2>
+                <div class="AreaInfo">
+                    <div class="AreaInput">
+                        <h3>Nome</h3>
+                        <div class="AreaDentroInput">
+                            <input type="text" placeholder="@joaozinho">
+                            <a href="#" class="container-editar">
+                                <img src="../../imgs/botao de editar.svg" alt="botao de editar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="AreaInput">
+                        <h3>Nome de usuário</h3>
+                        <div class="AreaDentroInput">
+                            <input type="text" placeholder="Jão">
+                            <a href="#" class="container-editar">
+                                <img src="../../imgs/botao de editar.svg" alt="botao de editar">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Pessoais -->
+            <div class="AreaConfigConta">
+                <h2>Informações pessoais</h2>
+                <div class="AreaInfo">
+                    <div class="AreaInput">
+                        <h3>Email</h3>
+                        <div class="AreaDentroInput">
+                            <input type="text" placeholder="j***5@gmail.com">
+                            <a href="#" class="container-editar">
+                                <img src="../../imgs/botao de editar.svg" alt="botao de editar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="AreaInput">
+                        <h3>Telefone</h3>
+                        <div class="AreaDentroInput">
+                            <input type="text" placeholder="Adicionar">
+                            <a href="#" class="container-editar">
+                                <img src="../../imgs/botao de editar.svg" alt="botao de editar">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Senha -->
+            <div class="AreaConfigConta">
+                <h2>Senha</h2>
+                <div class="AreaInfoSenha">
+                    <h3>Altere sua senha</h3>
+                    <p>Para sua segurança, recomendamos enfaticamente que escolha uma senha única, que não seja usada para nenhuma outra conta on-line.</p>
+                    <div class="container-btn">
+                        <a href="#" class="btn-AlterarSenha">Alterar senha</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aparência do Perfil -->
+            <div class="AreaConfigConta">
+                <h2>Aparência do perfil</h2>
+                <div class="AreaInfoPerfil">
+                    <h3>Foto de perfil • Banner • Bio</h3>
+                    <div class="container-btn-Editar">
+                        <a href="#" class="btn-Editar">Editar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicativos Conectados -->
+            <div class="AreaConfigConta">
+                <h2>Aplicativos conectados</h2>
+                <div class="aplicativosDesconectados">
+                    <img src="../../imgs/icone-google.svg" alt="icone do google">
+                    <img src="../../imgs/icone-apple.svg" alt="icone da apple">
+                </div>
+                
+                <div class="aplicativosConectados">
+                    <!-- Card X / Twitter -->
+                    <div class="aplicativoConectado">
+                        <div class="conteudoCardApp">
+                            <div class="descricaoAplicativo">
+                                <img src="../../imgs/icone-X.svg" alt="X">
+                                <div>
+                                    <h4>Joaz</h4>
+                                    <p>X</p>
+                                </div>
+                            </div>
+                            <button class="btn-fechar">×</button>
+                        </div>
+                        <div class="estadoPerfil">
+                            <p>Exibir no perfil</p>
+                            <label class="container-checkbox">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Card TikTok -->
+                    <div class="aplicativoConectado">
+                        <div class="conteudoCardApp">
+                            <div class="descricaoAplicativo">
+                                <img src="../../imgs/icone-tiktok.svg" alt="TikTok">
+                                <div>
+                                    <h4>Joaca</h4>
+                                    <p>Tik tok</p>
+                                </div>
+                            </div>
+                            <button class="btn-fechar">×</button>
+                        </div>
+                        <div class="estadoPerfil">
+                            <p>Exibir no perfil</p>
+                            <label class="container-checkbox">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Card Pinterest -->
+                    <div class="aplicativoConectado">
+                        <div class="conteudoCardApp">
+                            <div class="descricaoAplicativo">
+                                <img src="../../imgs/icone-pinterest.svg" alt="Pinterest">
+                                <div>
+                                    <h4>Jao</h4>
+                                    <p>Pinterest</p>
+                                </div>
+                            </div>
+                            <button class="btn-fechar">×</button>
+                        </div>
+                        <div class="estadoPerfil">
+                            <p>Exibir no perfil</p>
+                            <label class="container-checkbox">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Card Instagram -->
+                    <div class="aplicativoConectado">
+                        <div class="conteudoCardApp">
+                            <div class="descricaoAplicativo">
+                                <img src="../../imgs/icone-instagram.svg" alt="Instagram">
+                                <div>
+                                    <h4>Joazin</h4>
+                                    <p>Instagram</p>
+                                </div>
+                            </div>
+                            <button class="btn-fechar">×</button>
+                        </div>
+                        <div class="estadoPerfil">
+                            <p>Exibir no perfil</p>
+                            <label class="container-checkbox">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exibição no Perfil -->
+            <div class="AreaConfigConta">
+                <h2>Exibição no perfil</h2>
+                <div class="AreaExibicaoPerfil">
+                    <div class="itemExibicao">
+                        <div>
+                            <h3>Top artistas do mês</h3>
+                            <p>Exibir top artistas do mês</p>
+                        </div>
+                        <label class="container-checkbox">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="itemExibicao">
+                        <div>
+                            <h3>Top plays do mês</h3>
+                            <p>Exibir top plays do mês</p>
+                        </div>
+                        <label class="container-checkbox">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="itemExibicao">
+                        <div>
+                            <h3>Tempo ouvido</h3>
+                            <p>Exibir tempo total ouvido de musica</p>
+                        </div>
+                        <label class="container-checkbox">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="itemExibicao">
+                        <div>
+                            <h3>Ouvindo no momento</h3>
+                            <p>Exibir oque está ouvindo no momento</p>
+                        </div>
+                        <label class="container-checkbox">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="itemExibicao">
+                        <div>
+                            <h3>Playlists criadas</h3>
+                            <p>Exibir playlists criadas</p>
+                        </div>
+                        <label class="container-checkbox">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assinatura -->
+            <div class="AreaConfigConta">
+                <h2>Assinatura</h2>
+                <div class="AreaAssinatura">
+                    <h3>Premium - Solo</h3>
+                    <a href="#" class="btn-Gerenciar">Gerenciar</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
