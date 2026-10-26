@@ -1,0 +1,323 @@
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --muted: #cfd3dc;
+  --dim: #8b90a0;
+  --blue: #2a5bd7;
+  --blue-soft: #4d8dff;
+  --line: #3a3a3a;
+  --field: #14161c;
+  --player-h: 92px;
+  --content-w: 1920px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  min-height: 100vh;
+  padding-bottom: var(--player-h);
+}
+
+button { background: none; border: 0; color: inherit; cursor: pointer; font: inherit; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--blue-soft); outline-offset: 3px; }
+
+.ic {
+  width: 28px; height: 28px;
+  fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* ---------- Barra superior (fixa) ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 22px 56px;
+  background: rgba(0, 0, 0, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #14161c;
+}
+.brand { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 700; }
+.brand-logo { width: 30px; height: 30px; border-radius: 50%; background: #fff; }
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav .ic { width: 26px; height: 26px; }
+.search {
+  display: flex; align-items: center; gap: 10px;
+  width: 440px; padding: 11px 18px;
+  background: var(--field); border: 1px solid #2c2f38; border-radius: 999px;
+  color: var(--muted);
+}
+.search .ic { width: 18px; height: 18px; }
+.search input { flex: 1; min-width: 0; background: none; border: 0; color: var(--fg); font-size: 15px; }
+.search input::placeholder { color: var(--muted); }
+.user { display: flex; align-items: center; justify-content: flex-end; gap: 20px; }
+.plans {
+  padding: 9px 26px; border-radius: 8px;
+  background: var(--blue-soft); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .04em;
+}
+.avatar {
+  width: 34px; height: 34px; border-radius: 50%; object-fit: cover;
+  background: radial-gradient(circle at 35% 35%, #f3c9a5, #b5643c);
+}
+.user .ic { width: 26px; height: 26px; }
+
+/* ---------- Cabeçalho do álbum ---------- */
+.page { width: min(100%, var(--content-w)); margin: 0 auto; padding: 24px 40px 48px; }
+
+.capa.Album { display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+.capa .cover {
+  width: 320px; height: 320px; object-fit: cover;
+  background: linear-gradient(160deg, #10315a, #1d5aa0 45%, #071a33);
+  box-shadow: 0 16px 60px rgba(42, 91, 215, .3);
+}
+
+.capa h2 { margin-top: 40px; font-size: 52px; font-weight: 700; letter-spacing: -.01em; }
+
+.artista { display: flex; align-items: center; gap: 14px; margin-top: 10px; }
+.artista img {
+  width: 56px; height: 56px; border-radius: 50%; object-fit: cover;
+  background: #1d5aa0;
+}
+.artista h4 { font-size: 16px; font-weight: 400; color: var(--muted); }
+.artista h4 b { color: #fff; font-weight: 700; }
+
+.actions { align-self: flex-start; display: flex; align-items: center; gap: 30px; margin-top: 24px; }
+.play {
+  width: 120px; height: 120px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--blue); color: #fff;
+  transition: transform .15s, background .15s;
+}
+.play:hover { background: #3468ea; transform: scale(1.04); }
+.play .ic { width: 48px; height: 48px; margin-left: 6px; }
+.ghost { color: var(--muted); padding: 6px; display: grid; place-items: center; }
+.ghost:hover { color: #fff; }
+.actions .ghost .ic { width: 32px; height: 32px; }
+
+/* ---------- Lista de faixas ---------- */
+.tracks { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 6px; }
+.track {
+  display: grid;
+  grid-template-columns: 56px 1fr auto 90px;
+  align-items: center;
+  height: 88px;
+  padding: 0 32px 0 20px;
+  margin: 0 -32px 0 -20px;
+  transition: background .12s;
+}
+.track:not(.active):hover { background: #101218; }
+.track.active { background: var(--blue); }
+
+.n { font-size: 22px; }
+.info { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.info b { font-size: 17px; font-weight: 600; }
+.info small { display: flex; align-items: center; gap: 7px; font-size: 15px; color: var(--muted); }
+.track.active small { color: #e6ecff; }
+.clip {
+  display: inline-grid; place-items: center;
+  width: 18px; height: 14px; border: 1.5px solid currentColor; border-radius: 3px;
+  font-size: 8px; font-style: normal;
+}
+
+.tools { display: flex; align-items: center; gap: 44px; margin-right: 56px; }
+.tools button { display: grid; place-items: center; padding: 4px; }
+.tools .ic { width: 26px; height: 26px; }
+.tools button:hover { color: #fff; }
+
+time { justify-self: end; font-size: 22px; font-variant-numeric: tabular-nums; }
+
+/* ---------- Créditos ---------- */
+.credits { margin-top: 32px; font-size: 14px; line-height: 1.6; color: var(--dim); }
+
+/* ---------- Mais do artista ---------- */
+.more { margin-top: 56px; }
+.more-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 22px; }
+.more-head h3 { font-size: 24px; font-weight: 700; }
+.more-head a { font-size: 14px; color: var(--muted); }
+.more-head a:hover { color: #fff; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: linear-gradient(160deg, #1b2233, #0b0e15);
+  transition: transform .15s;
+}
+.card:hover img { transform: translateY(-3px); }
+
+.card b { font-size: 16px; font-weight: 700; line-height: 1.3; }
+.card small { font-size: 14px; color: var(--dim); }
+
+/* ---------- Player fixo ---------- */
+.player {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: var(--player-h);
+  display: grid; grid-template-columns: 1fr minmax(420px, 1.4fr) 1fr;
+  align-items: center; gap: 24px;
+  padding: 0 56px;
+  background: #05070c; border-top: 1px solid #1a1d26;
+  z-index: 10;
+}
+.now { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.now img { width: 60px; height: 60px; object-fit: cover; background: #1d5aa0; flex-shrink: 0; }
+.now-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.now-text b { font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.now-text small { font-size: 14px; color: var(--muted); }
+.now .ic, .center .ic, .extra .ic { width: 24px; height: 24px; }
+
+.center { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ctrls { display: flex; align-items: center; gap: 26px; }
+.mini-play {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--blue); color: #fff;
+}
+.mini-play .ic { width: 18px; height: 18px; margin-left: 2px; }
+
+.progress { display: flex; align-items: center; gap: 14px; width: 100%; max-width: 640px; font-size: 13px; color: var(--muted); }
+
+.extra { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
+
+/* Sliders (progresso e volume) */
+input[type="range"] { -webkit-appearance: none; appearance: none; height: 4px; border-radius: 2px; background: #2a2e3a; cursor: pointer; }
+input[type="range"].vol { width: 130px; background: linear-gradient(90deg, var(--blue-soft) 70%, #2a2e3a 70%); }
+.progress input { flex: 1; }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 13px; height: 13px; border-radius: 50%; background: #fff; }
+input[type="range"]::-moz-range-thumb { width: 13px; height: 13px; border: 0; border-radius: 50%; background: #fff; }
+
+/* ---------- Notebook / 1440px ---------- */
+@media (max-width: 1600px) {
+  :root { --player-h: 80px; --content-w: 1100px; }
+  .ic { width: 24px; height: 24px; }
+  .topbar { padding: 18px 44px; }
+  .brand { font-size: 16px; gap: 10px; }
+  .brand-logo { width: 26px; height: 26px; }
+  .nav { gap: 20px; }
+  .nav .ic, .user .ic { width: 22px; height: 22px; }
+  .search { width: 360px; padding: 9px 16px; gap: 8px; }
+  .search .ic { width: 16px; height: 16px; }
+  .search input { font-size: 13px; }
+  .user { gap: 16px; }
+  .plans { padding: 8px 22px; font-size: 11px; }
+  .avatar { width: 28px; height: 28px; }
+
+  .page { padding: 22px 32px 44px; }
+  .capa .cover { width: 260px; height: 260px; }
+  .capa h2 { margin-top: 32px; font-size: 42px; }
+  .artista { gap: 12px; margin-top: 8px; }
+  .artista img { width: 48px; height: 48px; }
+  .artista h4 { font-size: 14px; }
+  .actions { gap: 24px; margin-top: 20px; }
+  .play { width: 100px; height: 100px; }
+  .play .ic { width: 40px; height: 40px; margin-left: 5px; }
+  .actions .ghost .ic { width: 28px; height: 28px; }
+
+  .tracks { margin-top: 30px; }
+  .track { height: 76px; grid-template-columns: 48px 1fr auto 76px; padding: 0 26px 0 16px; margin: 0 -26px 0 -16px; }
+  .n, time { font-size: 19px; }
+  .info b { font-size: 15px; }
+  .info small { font-size: 13px; }
+  .clip { width: 15px; height: 12px; font-size: 7px; }
+  .tools { gap: 36px; margin-right: 44px; }
+  .tools .ic { width: 22px; height: 22px; }
+
+  .credits { margin-top: 28px; font-size: 12px; }
+  .more { margin-top: 48px; }
+  .more-head { margin-bottom: 18px; }
+  .more-head h3 { font-size: 20px; }
+  .more-head a { font-size: 12px; }
+  .cards { gap: 22px; }
+  .card img { margin-bottom: 8px; border-radius: 6px; }
+  .card b { font-size: 14px; }
+  .card small { font-size: 12px; }
+
+  .player { grid-template-columns: 1fr minmax(380px, 1.4fr) 1fr; gap: 20px; padding: 0 44px; }
+  .now { gap: 14px; }
+  .now img { width: 52px; height: 52px; }
+  .now-text b { font-size: 14px; }
+  .now-text small { font-size: 12px; }
+  .now .ic, .center .ic, .extra .ic { width: 20px; height: 20px; }
+  .center { gap: 6px; }
+  .ctrls { gap: 22px; }
+  .mini-play { width: 38px; height: 38px; }
+  .mini-play .ic { width: 15px; height: 15px; }
+  .progress { max-width: 560px; gap: 12px; font-size: 12px; }
+  .extra { gap: 14px; }
+  input[type="range"].vol { width: 110px; }
+  input[type="range"]::-webkit-slider-thumb { width: 12px; height: 12px; }
+  input[type="range"]::-moz-range-thumb { width: 12px; height: 12px; }
+}
+
+/* ---------- Tablet / notebook pequeno ---------- */
+@media (max-width: 1100px) {
+  :root { --player-h: 72px; }
+  .topbar { padding: 14px 28px; }
+  .search { width: 280px; }
+  .page { padding: 20px 28px 40px; }
+  .capa .cover { width: 230px; height: 230px; }
+  .capa h2 { font-size: 36px; margin-top: 26px; }
+  .play { width: 88px; height: 88px; }
+  .track { height: 68px; grid-template-columns: 40px 1fr auto 64px; }
+  .n, time { font-size: 17px; }
+  .tools { gap: 26px; margin-right: 28px; }
+  .cards { gap: 16px; }
+  .player { padding: 0 28px; }
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 720px) {
+  :root { --player-h: 68px; }
+  .topbar { grid-template-columns: auto 1fr; padding: 12px 16px; }
+  .nav { display: none; }
+  .brand { font-size: 15px; }
+  .page { padding: 16px 16px 24px; }
+  .capa .cover { width: 220px; height: 220px; }
+  .capa h2 { font-size: 32px; }
+  .artista h4 { font-size: 12px; }
+  .actions { gap: 12px; align-self: center; flex-wrap: wrap; justify-content: center; }
+  .play { width: 80px; height: 80px; }
+  .play .ic { width: 32px; height: 32px; }
+  .actions .ghost .ic { width: 24px; height: 24px; }
+  .track { grid-template-columns: 30px 1fr auto; margin: 0 -8px; padding: 0 8px; height: 64px; }
+  .tools { display: none; }
+  .n, time { font-size: 15px; }
+  .info b { font-size: 14px; }
+  .info small { font-size: 12px; }
+
+  .cards { display: flex; overflow-x: auto; gap: 12px; padding-bottom: 8px; }
+  .cards li { flex: 0 0 130px; }
+
+  .player { grid-template-columns: 1fr auto; padding: 0 14px; }
+  .extra, .progress span { display: none; }
+  .center { align-items: flex-end; }
+  .now img { width: 44px; height: 44px; }
+  .now .ic, .center .ic { width: 20px; height: 20px; }
+}
