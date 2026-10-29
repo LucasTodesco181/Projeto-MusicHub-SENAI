@@ -1,25 +1,194 @@
-const slideCarrossel = document.querySelector('.tipos-albuns');
-let index = 0;
-const totalSlides = document.querySelectorAll('.slide').length;
+document.addEventListener('DOMContentLoaded', () => {
+    const carrossel = document.getElementById('carrossel-albuns');
 
-setInterval(() => {
-    index = (index + 1) % totalSlides;
-    slideCarrossel.style.transform = `translateX(-${index * 100}%)`;
-}, 3000);
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Quando clica no carrossel
+    carrossel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        carrossel.classList.add('active');
+        startX = e.pageX - carrossel.offsetLeft;
+        scrollLeft = carrossel.scrollLeft;
+    });
+
+    // Quando o ponteiro sai da área do carrossel
+    carrossel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando solta o clique do mouse
+    carrossel.addEventListener('mouseup', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando move o mouse segurando o clique
+    carrossel.addEventListener('mousemove', (e) => {
+        if (!isDown) return; // Se não estiver clicado, não faz nada
+        e.preventDefault();
+
+        const x = e.pageX - carrossel.offsetLeft;
+        const walk = (x - startX) * 2; // O multiplicador '2' ajusta a velocidade da rolagem
+        carrossel.scrollLeft = scrollLeft - walk;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carrossel = document.getElementById('carrossel-artista');
+
+    let isDown = false;
+    let isDragging = false; // Identifica se o usuário arrastou o mouse
+    let startX;
+    let scrollLeft;
+
+    // Quando clica no carrossel
+    carrossel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        isDragging = false; // Reseta no início do clique
+        carrossel.classList.add('active');
+        startX = e.pageX - carrossel.offsetLeft;
+        scrollLeft = carrossel.scrollLeft;
+    });
+
+    // Quando o ponteiro sai da área do carrossel
+    carrossel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando solta o clique do mouse
+    carrossel.addEventListener('mouseup', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando move o mouse segurando o clique
+    carrossel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+
+        const x = e.pageX - carrossel.offsetLeft;
+        const walk = (x - startX) * 2;
+
+        // Se moveu mais de 5 pixels, considera que foi um arraste e não um clique
+        if (Math.abs(x - startX) > 5) {
+            isDragging = true;
+        }
+
+        e.preventDefault();
+        carrossel.scrollLeft = scrollLeft - walk;
+    });
+
+    // Lógica para clicar no card do artista
+    const cardsArtista = carrossel.querySelectorAll('.artista');
+
+    cardsArtista.forEach(artista => {
+        artista.addEventListener('click', () => {
+            // Se o usuário estava arrastando a tela, ignora a ação do clique
+            if (isDragging) return;
+
+            const nomeArtista = artista.querySelector('h3').textContent;
+            console.log(`Abrindo página do artista: ${nomeArtista}`);
+
+            // Coloque aqui o redirecionamento para a página do artista, ex:
+            // window.location.href = `artista.html?nome=${encodeURIComponent(nomeArtista)}`;
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carrossel = document.getElementById('carrossel-2000s');
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Quando clica no carrossel
+    carrossel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        carrossel.classList.add('active');
+        startX = e.pageX - carrossel.offsetLeft;
+        scrollLeft = carrossel.scrollLeft;
+    });
+
+    // Quando o ponteiro sai da área do carrossel
+    carrossel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando solta o clique do mouse
+    carrossel.addEventListener('mouseup', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando move o mouse segurando o clique
+    carrossel.addEventListener('mousemove', (e) => {
+        if (!isDown) return; // Se não estiver clicado, não faz nada
+        e.preventDefault();
+
+        const x = e.pageX - carrossel.offsetLeft;
+        const walk = (x - startX) * 2; // O multiplicador '2' ajusta a velocidade da rolagem
+        carrossel.scrollLeft = scrollLeft - walk;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carrossel = document.getElementById('carrossel-alta');
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Quando clica no carrossel
+    carrossel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        carrossel.classList.add('active');
+        startX = e.pageX - carrossel.offsetLeft;
+        scrollLeft = carrossel.scrollLeft;
+    });
+
+    // Quando o ponteiro sai da área do carrossel
+    carrossel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando solta o clique do mouse
+    carrossel.addEventListener('mouseup', () => {
+        isDown = false;
+        carrossel.classList.remove('active');
+    });
+
+    // Quando move o mouse segurando o clique
+    carrossel.addEventListener('mousemove', (e) => {
+        if (!isDown) return; // Se não estiver clicado, não faz nada
+        e.preventDefault();
+
+        const x = e.pageX - carrossel.offsetLeft;
+        const walk = (x - startX) * 2; // O multiplicador '2' ajusta a velocidade da rolagem
+        carrossel.scrollLeft = scrollLeft - walk;
+    });
+});
 
 
-// Explicação por linhas
+document.addEventListener('DOMContentLoaded', () => {
+    // Tratamento para clique nos botões de Play
+    const botoesPlay = document.querySelectorAll('.btn-play');
 
-// 1. Pega o bloco do slide-carrossel, div mãe de todas as imagens
-// 2. Index = 0 Variavel para validar qual slide está ativo, começando por zero que é a posição da primeira imagem
-// 3. Conta qual o tamanho da lista de imagens, totalizando o total de imagens que existe
+    botoesPlay.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evita conflitos com a rolagem por arraste
 
-// 5. Cria um temporizador que muda de slide a cada 3 segundos (3000 ms).
-// 6. Aumenta o index e o operador % (módulo) serve para voltar para o início quando chegar no final.
-    // Ex: se temos 3 slides e o index virar 3, então 3 % 3 = 0 -> volta pro primeiro slide.
- 
-// 7. Aplica uma transformação CSS no container para deslizar ele para a esquerda.
-    //Se index = 1, ele move -100% -> vai para o segundo slide.
-    //Se index = 2, move -200%, e assim por diante.
+            const album = btn.closest('.album');
+            const titulo = album.querySelector('h3').textContent;
+            const artista = album.querySelector('h4').textContent;
 
-// 8. Temporizador definido em 3 segundos.
+            console.log(`Tocando agora: ${titulo} - ${artista}`);
+            // Insira aqui a sua lógica de tocador de áudio
+        });
+    });
+});

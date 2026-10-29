@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,115 +11,606 @@
     <link rel="stylesheet" href="../styles/global.css">
 
 </head>
+
 <body>
-      <header class="cabecalho">
+    <header class="cabecalho">
         <h1>EXPLORAR</h1>
     </header>
-   <h2>Navegue pelos gêneros </h2>
-        <main class="conteudo">
 
-         <section class="navegar">
+    <main class="conteudo">
+
+        <section class="navegar">
+            <h2>Navegue pelos gêneros</h2>
             <div class="tipos">
                 <article class="genero">
-                    <img src="../imgs/Rectangle 50.svg" alt="">
+                    <img src="../imgs/Rectangle 50.svg" alt="Sertanejo">
                 </article>
-                
                 <article class="genero">
-                    <img src="../imgs/Rectangle 51.svg" alt="">
+                    <img src="../imgs/Rectangle 51.svg" alt="Eletrônica">
                 </article>
-
                 <article class="genero">
-                    <img src="../imgs/Rectangle 52.svg" alt="">
+                    <img src="../imgs/Rectangle 52.svg" alt="Funk">
                 </article>
-
                 <article class="genero">
-                    <img src="../imgs/Rectangle 53.svg" alt="">
+                    <img src="../imgs/Rectangle 53.svg" alt="MPB">
                 </article>
-
                 <article class="genero">
-                    <img src="../imgs/Rectangle 54.svg" alt="">
+                    <img src="../imgs/Rectangle 54.svg" alt="Pop">
                 </article>
             </div>
-         </section>
+        </section>
 
-         <section class="lançamentos">
-              <h2>Ultimos lançamentos!</h2>
-            <div class="tipos-albuns">
+        <section class="lançamentos">
+            <h2>Últimos lançamentos!</h2>
+            <div class="tipos-albuns" id="carrossel-albuns">
+
                 <article class="album">
-                    <img src="../imgs/album1.png"  class="slide" alt="album1">
+                    <div class="capa-container">
+                        <img src="../imgs/album1.png" class="slide" alt="album1">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Octane</h3>
                     <h4>Don Toliver</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album2.png" class="slide" alt="album2">>
+                    <div class="capa-container">
+                        <img src="../imgs/album2.png" class="slide" alt="album2">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>After Hours</h3>
                     <h4>The Weeknd</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album3.png" class="slide" alt="album3">>
+                    <div class="capa-container">
+                        <img src="../imgs/album3.png" class="slide" alt="album3">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Previas.zip</h3>
                     <h4>Teto</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album4.png" class="slide" alt="album4">>
+                    <div class="capa-container">
+                        <img src="../imgs/album4.png" class="slide" alt="album4">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Rebel</h3>
                     <h4>EsDeeKid</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album5.png" class="slide" alt="album5">>
+                    <div class="capa-container">
+                        <img src="../imgs/album5.png" class="slide" alt="album5">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>The Fall-Off</h3>
                     <h4>J. Cole</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album6.png" class="slide" alt="album6">>
+                    <div class="capa-container">
+                        <img src="../imgs/album6.png" class="slide" alt="album6">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Petal</h3>
                     <h4>Ariana Grande</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album7.svg" class="slide" alt="album7">>
+                    <div class="capa-container">
+                        <img src="../imgs/album7.svg" class="slide" alt="album7">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Inesperado - Ao vivo</h3>
                     <h4>Jorge e Matheus</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album8.svg" class="slide" alt="album8">>
+                    <div class="capa-container">
+                        <img src="../imgs/album8.svg" class="slide" alt="album8">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Love Sick</h3>
                     <h4>Don Toliver</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album9.svg" class="slide" alt="album9">>
+                    <div class="capa-container">
+                        <img src="../imgs/album9.svg" class="slide" alt="album9">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Good kid, m.A.A.d city</h3>
                     <h4>Kendrick Lamar</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album10.svg" class="slide" alt="album10">>
+                    <div class="capa-container">
+                        <img src="../imgs/album10.svg" class="slide" alt="album10">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Fine Line</h3>
                     <h4>Harry Styles</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album11.svg" class="slide" alt="album11">>
+                    <div class="capa-container">
+                        <img src="../imgs/album11.svg" class="slide" alt="album11">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>ASTROWORLD</h3>
                     <h4>Travis Scott</h4>
                 </article>
 
                 <article class="album">
-                    <img src="../imgs/album12.svg" class="slide" alt="album12">>
+                    <div class="capa-container">
+                        <img src="../imgs/album12.svg" class="slide" alt="album12">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
                     <h3>Icon</h3>
                     <h4>Brent Faiyaz</h4>
                 </article>
-                
             </div>
-         </section>
-         </main>
-         <script src="explorar.js"></script>
+        </section>
+
+      <!--------------------------------------------------------------------------->     
+
+        <section class="Artistas">
+            <h2>Artistas em Destaque</h2>
+            <div class="tipos-artista" id="carrossel-artista">
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 4.svg" class="slide" alt="artista1">
+                    <h3>Evanescense</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 10.svg" class="slide" alt="artista2">
+                    <h3>Jorge & Mateus</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 11.svg" class="slide" alt="artista3">
+                    <h3>Playboi Carti</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 8.svg" class="slide" alt="artista4">
+                    <h3>Deftones</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 7.svg" class="slide" alt="artista5">
+                    <h3>Pierce The Veil</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 9.svg" class="slide" alt="artista6">
+                    <h3>Marilía Mendonça</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 12.svg" class="slide" alt="artista7">
+                    <h3>Wiu</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/ab67616100005174ed3b89aa602145fde71a163a 1.svg" class="slide" alt="artista8">
+                    <h3>Mac Miller</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/ab6761610000e5ebc1719ac9e6a75c1c25835018 1.svg" class="slide" alt="artista9">
+                    <h3>The Weeknd</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 6.svg" class="slide" alt="artista10">
+                    <h3>Ariana Grande</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 13.svg" class="slide" alt="artista11">
+                    <h3>Lil  Peep</h3>
+                    <h4>Artista</h4>
+                </article>
+
+                <article class="artista">
+                        <img src="../imgs/Ellipse 9-1.svg" class="slide" alt="artista12">
+                    <h3>Gunna</h3>
+                    <h4>Artista</h4>
+                </article>
+            </div>
+        </section>
+
+         <!--------------------------------------------------------------------------->     
+
+        <section class="Anos">
+            <h2>Direto dos Anos 2000</h2>
+            <div class="tipos-2000s" id="carrossel-2000s">
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 13.svg" class="slide" alt="album13">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Funeral</h3>
+                    <h4>Arcade Fire</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 14.svg" class="slide" alt="album14">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>The College Dropout</h3>
+                    <h4>Kanye West</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 15.svg" class="slide" alt="album15">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Back to Black</h3>
+                    <h4>Amy Winehouse</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 16.svg" class="slide" alt="album16">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Dangerously in Love</h3>
+                    <h4>Beyoncé</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 17.svg" class="slide" alt="album17">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Oops!... I Did It Again</h3>
+                    <h4>Britney Spears</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 18.svg" class="slide" alt="album18">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Hybrid Theory</h3>
+                    <h4>Linkin Park</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 19.svg" class="slide" alt="album19">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>ISpeakerboxxx/The Love Below</h3>
+                    <h4>OutKast</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 20.svg" class="slide" alt="album20">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>A Rush of Blood to the Head</h3>
+                    <h4>Coldplay</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 21.svg" class="slide" alt="album21">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Elephant</h3>
+                    <h4>The White Stripes</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 22.svg" class="slide" alt="album33">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Is This It</h3>
+                    <h4>The Strokes</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 23.svg" class="slide" alt="album23">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Kid A</h3>
+                    <h4>Radiohead</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 24.svg" class="slide" alt="album24">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>The Marshall Mathers LP</h3>
+                    <h4>Eminem</h4>
+                </article>
+            </div>
+        </section>
+
+         <!---------------------------------------------------------------------------> 
+
+        <section class="Alta">
+            <h2>Músicas em Alta</h2>
+            <div class="tipos-alta" id="carrossel-alta">
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 25.svg" class="slide" alt="album25">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Graduation</h3>
+                    <h4>Kayne West</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 26.svg" class="slide" alt="album26">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>333</h3>
+                    <h4>Matuê</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 27.svg" class="slide" alt="album27">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Harry's House</h3>
+                    <h4>Harry Styles</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 28.svg" class="slide" alt="album28">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Caos</h3>
+                    <h4>Alee</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 33.svg" class="slide" alt="album33">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Fallen</h3>
+                    <h4>Evanescense</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 29.svg" class="slide" alt="album29">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>For All The Dogs</h3>
+                    <h4>Drake</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 30.svg" class="slide" alt="album30">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Sweet Boy</h3>
+                    <h4>Malcolm Todd</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 31.svg" class="slide" alt="album31">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Contradições</h3>
+                    <h4>KayBlack</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 32.svg" class="slide" alt="album32">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Swimming</h3>
+                    <h4>Mac Miller</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 35.svg" class="slide" alt="album35">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Birds in the trap</h3>
+                    <h4>Travis Scott</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 34.svg" class="slide" alt="album34">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Igor</h3>
+                    <h4>Tyler the Creator</h4>
+                </article>
+
+                <article class="album">
+                    <div class="capa-container">
+                        <img src="../imgs/album 14.svg" class="slide" alt="album14">
+                        <button class="btn-play" title="Tocar">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>The College Dropout</h3>
+                    <h4>Kanye West</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="explorar.js"></script>
 </body>
+
 </html>

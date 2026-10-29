@@ -7,7 +7,7 @@
 }
 
 body {
-   background-image: url(../imgs/pagina\ explorar\ com\ login\ -\ victor.svg);
+    background-image: url(../imgs/pagina\ explorar\ com\ login\ -\ victor.svg);
     color: #222222;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,13 +20,14 @@ body {
     background-color: transparent;
 }
 
-h1 {
+.cabecalho h1 {
+    font-size: 50px; /* Defina aqui o tamanho desejado (ex: 36px, 48px, 64px) */
     margin-top: 120px;
     text-align: start;
     margin-left: 70px;
-    /* margin-left: 75px; */
 }
-h2{
+
+h2 {
     color: var(--branco);
     /* margin-left: 105px; */
     text-align: center;
@@ -41,52 +42,334 @@ h3 {
 h4 {
     color: var(--branco);
 }
+
 .conteudo {
-    /* margin: auto 330px; */
-    width: 70%;
-    margin-top: 1200px;
+    width: 100%;
+    max-width: 1440px;
+    /* Garante que em telas gigantes não estique ao infinito */
     margin: 0 auto;
+    padding: 0 40px;
+}
+
+.lançamentos {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.lançamentos h2 {
+    text-align: start;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 16px;
 }
 
 .navegar {
-    /* margin-bottom: 40px; */
-    color: var(--branco)
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.navegar h2 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .tipos {
     display: flex;
-     /* grid-template-columns: repeat(5, 20%); */
-     cursor: pointer;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      gap: 15px;
-
+    justify-content: center;
+    /* Centraliza as imagens horizontalmente */
+    align-items: center;
+    gap: 30px;
+    width: 100%;
 }
 
 .genero img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+
 }
 
 .tipos-albuns {
-      display: flex;
-     cursor: pointer;
-      justify-content: space-between;
-     /* align-items: center;  */
-      width: 100%;
-      gap: 5px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    cursor: grab;
 
-     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 
+    scrollbar-width: none;
+    /* Esconde barra no Firefox */
+    -ms-overflow-style: none;
+}
+
+.tipos-albuns::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.tipos-albuns.active {
+    cursor: grabbing;
+    /* Mãozinha fechada */
+    scroll-behavior: auto;
+    /* Remove suavizado durante o arraste manual para não travar */
+}
+
+.album {
+    flex: 0 0 auto;
+    width: 150px;
 }
 
 .album img {
     width: 150px;
     height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    pointer-events: none;
+    -webkit-user-drag: none;
 }
 
-.lançamentos h2 {
-    text-align: start;
+.album h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album h4 {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Artistas {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.Artistas h2 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.tipos-artista {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding-top: 10px;    /* Dá espaço para o card subir no hover sem cortar */
+    padding-bottom: 15px;
+    cursor: grab;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tipos-artista::-webkit-scrollbar {
+    display: none;
+}
+
+.tipos-artista.active {
+    cursor: grabbing;
+    scroll-behavior: auto;
+}
+
+.artista {
+    flex: 0 0 auto;
+    width: 150px;
+    cursor: pointer; /* Indica ao passar o mouse que é clicável */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Efeito ao passar o mouse por cima do card do artista */
+.artista:hover {
+    transform: translateY(-4px);
+    opacity: 0.9;
+}
+
+.artista img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block; /* Garante que a imagem não gera espaçamentos extras */
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.artista h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.artista h4 {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Anos {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.Anos h2 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+ 
+
+.tipos-2000s {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    cursor: grab;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    scrollbar-width: none;
+    /* Esconde barra no Firefox */
+    -ms-overflow-style: none;
+}
+
+.tipos-2000s::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.tipos-2000s.active {
+    cursor: grabbing;
+    /* Mãozinha fechada */
+    scroll-behavior: auto;
+    /* Remove suavizado durante o arraste manual para não travar */
+}
+
+.Alta {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.Alta h2 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+ 
+
+.tipos-alta {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    cursor: grab;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    scrollbar-width: none;
+    /* Esconde barra no Firefox */
+    -ms-overflow-style: none;
+}
+
+.tipos-alta::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.tipos-alta.active {
+    cursor: grabbing;
+    /* Mãozinha fechada */
+    scroll-behavior: auto;
+    /* Remove suavizado durante o arraste manual para não travar */
+}
+
+
+/* Container que junta a capa e o botão */
+.capa-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.capa-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+
+/* Botão de Play escondido por padrão */
+.btn-play {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 42px;
+    height: 42px;
+    background-color: #5E92DB; /* Azul do botão */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    /* Esconde o botão e prepara para subir suavemente */
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+/* Ajuste fino da posição do ícone no centro */
+.btn-play svg {
+    margin-left: 2px;
+}
+
+/* Faz o botão aparecer quando passa o mouse sobre a capa */
+.capa-container:hover .btn-play {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação quando o cursor passa direto no botão */
+.btn-play:hover {
+    background-color: #1663CE;
+    transform: scale(1.08) !important;
 }
